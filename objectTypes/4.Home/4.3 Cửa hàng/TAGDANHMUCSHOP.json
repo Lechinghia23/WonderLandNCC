@@ -1,0 +1,274 @@
+{
+	"name": "TAGDANHMUCSHOP",
+	"plugin-id": "Sprite",
+	"sid": 254457854276545,
+	"isGlobal": false,
+	"editorNewInstanceIsReplica": true,
+	"instanceVariables": [],
+	"behaviorTypes": [],
+	"effectTypes": [],
+	"animations": {
+		"items": [
+			{
+				"frames": [
+					{
+						"width": 1013,
+						"height": 480,
+						"originX": 0.5,
+						"originY": 0.5,
+						"originalSource": "",
+						"exportFormat": "lossless",
+						"exportQuality": 0.8,
+						"fileType": "image/png",
+						"imageSpriteId": 2893058,
+						"collisionPoly": {
+							"points": [
+								0.040473840078973346,
+								0.1375,
+								0.12931885488647582,
+								0.14375,
+								0.1263573543928924,
+								0.8729166666666667,
+								0.03751233958538993,
+								0.8666666666666667
+							]
+						},
+						"useCollisionPoly": true,
+						"duration": 1,
+						"tag": ""
+					}
+				],
+				"sid": 763259241740641,
+				"name": "VAT PHAM",
+				"isLooping": false,
+				"isPingPong": false,
+				"repeatCount": 1,
+				"repeatTo": 0,
+				"speed": 5
+			},
+			{
+				"frames": [
+					{
+						"width": 1013,
+						"height": 480,
+						"originX": 0.5,
+						"originY": 0.5,
+						"originalSource": "",
+						"exportFormat": "lossless",
+						"exportQuality": 0.8,
+						"fileType": "image/png",
+						"imageSpriteId": 5056777,
+						"collisionPoly": {
+							"points": [
+								0.040473840078973346,
+								0.1375,
+								0.12931885488647582,
+								0.14375,
+								0.1263573543928924,
+								0.8729166666666667,
+								0.03751233958538993,
+								0.8666666666666667
+							]
+						},
+						"useCollisionPoly": true,
+						"duration": 1,
+						"tag": ""
+					}
+				],
+				"sid": 942674951345391,
+				"name": "NHAN VAT",
+				"isLooping": false,
+				"isPingPong": false,
+				"repeatCount": 1,
+				"repeatTo": 0,
+				"speed": 5
+			},
+			{
+				"frames": [
+					{
+						"width": 1013,
+						"height": 480,
+						"originX": 0.5,
+						"originY": 0.5,
+						"originalSource": "",
+						"exportFormat": "lossless",
+						"exportQuality": 0.8,
+						"fileType": "image/png",
+						"imageSpriteId": 457782,
+						"collisionPoly": {
+							"points": [
+								0.040473840078973346,
+								0.1375,
+								0.12931885488647582,
+								0.14375,
+								0.1263573543928924,
+								0.8729166666666667,
+								0.03751233958538993,
+								0.8666666666666667
+							]
+						},
+						"useCollisionPoly": true,
+						"duration": 1,
+						"tag": ""
+					}
+				],
+				"sid": 767184875550165,
+				"name": "Y PHUC",
+				"isLooping": false,
+				"isPingPong": false,
+				"repeatCount": 1,
+				"repeatTo": 0,
+				"speed": 5
+			},
+			{
+				"frames": [
+					{
+						"width": 1013,
+						"height": 480,
+						"originX": 0.5,
+						"originY": 0.5,
+						"originalSource": "",
+						"exportFormat": "lossless",
+						"exportQuality": 0.8,
+						"fileType": "image/png",
+						"imageSpriteId": 3937405,
+						"collisionPoly": {
+							"points": [
+								0.040473840078973346,
+								0.1375,
+								0.12931885488647582,
+								0.14375,
+								0.1263573543928924,
+								0.8729166666666667,
+								0.03751233958538993,
+								0.8666666666666667
+							]
+						},
+						"useCollisionPoly": true,
+						"duration": 1,
+						"tag": ""
+					}
+				],
+				"sid": 954163762893549,
+				"name": "CHO DEN",
+				"isLooping": false,
+				"isPingPong": false,
+				"repeatCount": 1,
+				"repeatTo": 0,
+				"speed": 5
+			},
+			{
+				"frames": [
+					{
+						"width": 1013,
+						"height": 480,
+						"originX": 0.5,
+						"originY": 0.5,
+						"originalSource": "",
+						"exportFormat": "lossless",
+						"exportQuality": 0.8,
+						"fileType": "image/png",
+						"imageSpriteId": 6013416,
+						"collisionPoly": {
+							"points": [
+								0.040473840078973346,
+								0.1375,
+								0.12931885488647582,
+								0.14375,
+								0.1263573543928924,
+								0.8729166666666667,
+								0.03751233958538993,
+								0.8666666666666667
+							]
+						},
+						"useCollisionPoly": true,
+						"duration": 1,
+						"tag": ""
+					}
+				],
+				"sid": 839614454715649,
+				"name": "THU CUNG",
+				"isLooping": false,
+				"isPingPong": false,
+				"repeatCount": 1,
+				"repeatTo": 0,
+				"speed": 5
+			},
+			{
+				"frames": [
+					{
+						"width": 1013,
+						"height": 480,
+						"originX": 0.5,
+						"originY": 0.5,
+						"originalSource": "",
+						"exportFormat": "lossless",
+						"exportQuality": 0.8,
+						"fileType": "image/png",
+						"imageSpriteId": 1841901,
+						"collisionPoly": {
+							"points": [
+								0.040473840078973346,
+								0.1375,
+								0.12931885488647582,
+								0.14375,
+								0.1263573543928924,
+								0.8729166666666667,
+								0.03751233958538993,
+								0.8666666666666667
+							]
+						},
+						"useCollisionPoly": true,
+						"duration": 1,
+						"tag": ""
+					}
+				],
+				"sid": 227781603429265,
+				"name": "GIAM GIA",
+				"isLooping": false,
+				"isPingPong": false,
+				"repeatCount": 1,
+				"repeatTo": 0,
+				"speed": 5
+			},
+			{
+				"frames": [
+					{
+						"width": 1013,
+						"height": 480,
+						"originX": 0.5,
+						"originY": 0.5,
+						"originalSource": "",
+						"exportFormat": "lossless",
+						"exportQuality": 0.8,
+						"fileType": "image/png",
+						"imageSpriteId": 5787981,
+						"collisionPoly": {
+							"points": [
+								0.040473840078973346,
+								0.1375,
+								0.12931885488647582,
+								0.14375,
+								0.1263573543928924,
+								0.8729166666666667,
+								0.03751233958538993,
+								0.8666666666666667
+							]
+						},
+						"useCollisionPoly": true,
+						"duration": 1,
+						"tag": ""
+					}
+				],
+				"sid": 725995586833264,
+				"name": "TIEN TE",
+				"isLooping": false,
+				"isPingPong": false,
+				"repeatCount": 1,
+				"repeatTo": 0,
+				"speed": 5
+			}
+		],
+		"subfolders": []
+	}
+}

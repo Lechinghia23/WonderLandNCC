@@ -1,0 +1,29 @@
+{
+	"name": "NUT_NHAN",
+	"plugin-id": "Button",
+	"sid": 420507783079985,
+	"instanceVariables": [],
+	"behaviorTypes": [],
+	"members": [
+		"BUTTON_LAYER_MAINMENU",
+		"BUTTON_LOGIN_MAINMENU",
+		"Button_Nhap_Username_Login",
+		"Button_Nhap_Password_Login",
+		"Button_Nho_MK",
+		"Button_Nhap_Username_Register",
+		"Button_Nhap_DisplayName_Register",
+		"Button_Nhap_Email_Register",
+		"Button_Nhap_Password_Register",
+		"BUTTON_REGISTER_MAINMENU",
+		"BUTTON_SHOP",
+		"BUTTON_GACHA",
+		"BUTTON_DAILY",
+		"BUTTON_EVENTS",
+		"BUTTON_FRIENDS",
+		"BUTTON_CHAT",
+		"BUTTON_CHATWORLD",
+		"BUTTONTAGDANHMUCSHOP",
+		"BUTTON_INFO",
+		"BUTTON_CITY"
+	]
+}

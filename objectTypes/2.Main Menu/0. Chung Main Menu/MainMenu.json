@@ -1,0 +1,204 @@
+{
+	"name": "MainMenu",
+	"plugin-id": "Sprite",
+	"sid": 812914313386680,
+	"isGlobal": false,
+	"editorNewInstanceIsReplica": true,
+	"instanceVariables": [],
+	"behaviorTypes": [],
+	"effectTypes": [],
+	"animations": {
+		"items": [
+			{
+				"frames": [
+					{
+						"width": 1013,
+						"height": 480,
+						"originX": 0.5,
+						"originY": 0.5,
+						"originalSource": "",
+						"exportFormat": "lossless",
+						"exportQuality": 0.8,
+						"fileType": "image/png",
+						"imageSpriteId": 1983296,
+						"collisionPoly": {
+							"points": [
+								0.21915103652517276,
+								0.2125,
+								0.8864758144126358,
+								0.2125,
+								0.8864758144126358,
+								0.7833333333333333,
+								0.21915103652517276,
+								0.78125
+							]
+						},
+						"useCollisionPoly": true,
+						"duration": 1,
+						"tag": ""
+					}
+				],
+				"sid": 874034971584649,
+				"name": "2. Login",
+				"isLooping": false,
+				"isPingPong": false,
+				"repeatCount": 1,
+				"repeatTo": 0,
+				"speed": 5
+			},
+			{
+				"frames": [
+					{
+						"width": 1013,
+						"height": 480,
+						"originX": 0.5,
+						"originY": 0.5,
+						"originalSource": "",
+						"exportFormat": "lossless",
+						"exportQuality": 0.8,
+						"fileType": "image/png",
+						"imageSpriteId": 5403520,
+						"collisionPoly": {
+							"points": [
+								0.21915103652517276,
+								0.2125,
+								0.8864758144126358,
+								0.2125,
+								0.8864758144126358,
+								0.7833333333333333,
+								0.21915103652517276,
+								0.78125
+							]
+						},
+						"useCollisionPoly": true,
+						"duration": 1,
+						"tag": ""
+					}
+				],
+				"sid": 848199590652616,
+				"name": "2. Login Pass",
+				"isLooping": false,
+				"isPingPong": false,
+				"repeatCount": 1,
+				"repeatTo": 0,
+				"speed": 5
+			},
+			{
+				"frames": [
+					{
+						"width": 1013,
+						"height": 480,
+						"originX": 0.5,
+						"originY": 0.5,
+						"originalSource": "",
+						"exportFormat": "lossless",
+						"exportQuality": 0.8,
+						"fileType": "image/png",
+						"imageSpriteId": 8515884,
+						"collisionPoly": {
+							"points": [
+								0.21915103652517276,
+								0.2125,
+								0.8864758144126358,
+								0.2125,
+								0.8864758144126358,
+								0.7833333333333333,
+								0.21915103652517276,
+								0.78125
+							]
+						},
+						"useCollisionPoly": true,
+						"duration": 1,
+						"tag": ""
+					}
+				],
+				"sid": 812566927657444,
+				"name": "3. Register",
+				"isLooping": false,
+				"isPingPong": false,
+				"repeatCount": 1,
+				"repeatTo": 0,
+				"speed": 5
+			},
+			{
+				"frames": [
+					{
+						"width": 1013,
+						"height": 480,
+						"originX": 0.5,
+						"originY": 0.5,
+						"originalSource": "",
+						"exportFormat": "lossless",
+						"exportQuality": 0.8,
+						"fileType": "image/png",
+						"imageSpriteId": 9630194,
+						"collisionPoly": {
+							"points": [
+								0.8923988153998026,
+								0.014583333333333334,
+								0.9417571569595261,
+								0.027083333333333334,
+								0.9417571569595261,
+								0.9666666666666667,
+								0.1579466929911155,
+								0.9666666666666667,
+								0.1579466929911155,
+								0.027083333333333334
+							]
+						},
+						"useCollisionPoly": true,
+						"duration": 1,
+						"tag": ""
+					}
+				],
+				"sid": 892838578153115,
+				"name": "5. Notication",
+				"isLooping": false,
+				"isPingPong": false,
+				"repeatCount": 1,
+				"repeatTo": 0,
+				"speed": 5
+			},
+			{
+				"frames": [
+					{
+						"width": 1013,
+						"height": 480,
+						"originX": 0.5,
+						"originY": 0.5,
+						"originalSource": "",
+						"exportFormat": "lossless",
+						"exportQuality": 0.8,
+						"fileType": "image/png",
+						"imageSpriteId": 14643,
+						"collisionPoly": {
+							"points": [
+								0.8923988153998026,
+								0.014583333333333334,
+								0.9417571569595261,
+								0.027083333333333334,
+								0.9417571569595261,
+								0.9666666666666667,
+								0.1579466929911155,
+								0.9666666666666667,
+								0.1579466929911155,
+								0.027083333333333334
+							]
+						},
+						"useCollisionPoly": true,
+						"duration": 1,
+						"tag": ""
+					}
+				],
+				"sid": 293596307693490,
+				"name": "6. Notication II",
+				"isLooping": false,
+				"isPingPong": false,
+				"repeatCount": 1,
+				"repeatTo": 0,
+				"speed": 5
+			}
+		],
+		"subfolders": []
+	}
+}

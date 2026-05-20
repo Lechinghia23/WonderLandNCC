@@ -1,0 +1,12 @@
+{
+	"name": "Advertising",
+	"plugin-id": "Chadori_PlayFab_Advertising",
+	"sid": 533208528332797,
+	"singleglobal-inst": {
+		"type": "Advertising",
+		"properties": {},
+		"uid": 13,
+		"sid": 132364056855430,
+		"tags": ""
+	}
+}

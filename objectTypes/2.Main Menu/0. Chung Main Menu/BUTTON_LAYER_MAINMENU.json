@@ -1,0 +1,38 @@
+{
+	"name": "BUTTON_LAYER_MAINMENU",
+	"plugin-id": "Button",
+	"sid": 662800053534393,
+	"isGlobal": false,
+	"editorNewInstanceIsReplica": true,
+	"instanceVariables": [
+		{
+			"name": "ROLE",
+			"type": "string",
+			"desc": "",
+			"show": true,
+			"sid": 767508627903358
+		},
+		{
+			"name": "ROLE_II",
+			"type": "string",
+			"desc": "",
+			"show": true,
+			"sid": 883594841831578
+		},
+		{
+			"name": "ROLE_ENG",
+			"type": "string",
+			"desc": "",
+			"show": true,
+			"sid": 301857668040065
+		},
+		{
+			"name": "ROLE_II_ENG",
+			"type": "string",
+			"desc": "",
+			"show": true,
+			"sid": 439388191619719
+		}
+	],
+	"behaviorTypes": []
+}

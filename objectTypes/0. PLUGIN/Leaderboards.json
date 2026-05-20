@@ -1,0 +1,12 @@
+{
+	"name": "Leaderboards",
+	"plugin-id": "CV_PlayFabClient_Leaderboards",
+	"sid": 422337685909895,
+	"singleglobal-inst": {
+		"type": "Leaderboards",
+		"properties": {},
+		"uid": 7,
+		"sid": 984165602250153,
+		"tags": ""
+	}
+}

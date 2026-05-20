@@ -1,0 +1,9 @@
+{
+	"name": "BUTTON_DAILY",
+	"plugin-id": "Button",
+	"sid": 673202213645090,
+	"isGlobal": false,
+	"editorNewInstanceIsReplica": true,
+	"instanceVariables": [],
+	"behaviorTypes": []
+}

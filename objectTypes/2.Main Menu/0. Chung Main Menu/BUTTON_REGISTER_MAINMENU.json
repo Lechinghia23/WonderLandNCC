@@ -1,0 +1,9 @@
+{
+	"name": "BUTTON_REGISTER_MAINMENU",
+	"plugin-id": "Button",
+	"sid": 172495145292893,
+	"isGlobal": false,
+	"editorNewInstanceIsReplica": true,
+	"instanceVariables": [],
+	"behaviorTypes": []
+}

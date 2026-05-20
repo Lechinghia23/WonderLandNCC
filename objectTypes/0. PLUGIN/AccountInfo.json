@@ -1,0 +1,12 @@
+{
+	"name": "AccountInfo",
+	"plugin-id": "CV_PlayFabClient_AccountInformation",
+	"sid": 825852965391116,
+	"singleglobal-inst": {
+		"type": "AccountInfo",
+		"properties": {},
+		"uid": 2,
+		"sid": 539638380774014,
+		"tags": ""
+	}
+}

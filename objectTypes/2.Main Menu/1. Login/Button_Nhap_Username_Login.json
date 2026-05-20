@@ -1,0 +1,9 @@
+{
+	"name": "Button_Nhap_Username_Login",
+	"plugin-id": "Button",
+	"sid": 142013263175658,
+	"isGlobal": false,
+	"editorNewInstanceIsReplica": true,
+	"instanceVariables": [],
+	"behaviorTypes": []
+}

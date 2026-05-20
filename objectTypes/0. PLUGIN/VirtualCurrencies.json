@@ -1,0 +1,12 @@
+{
+	"name": "VirtualCurrencies",
+	"plugin-id": "CV_PlayFabClient_VirtualCurrencies",
+	"sid": 857581289257701,
+	"singleglobal-inst": {
+		"type": "VirtualCurrencies",
+		"properties": {},
+		"uid": 14,
+		"sid": 591436115504765,
+		"tags": ""
+	}
+}

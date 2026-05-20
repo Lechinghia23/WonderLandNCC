@@ -1,0 +1,9 @@
+{
+	"name": "BUTTON_CHATWORLD",
+	"plugin-id": "Button",
+	"sid": 645531341197306,
+	"isGlobal": false,
+	"editorNewInstanceIsReplica": true,
+	"instanceVariables": [],
+	"behaviorTypes": []
+}

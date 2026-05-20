@@ -1,0 +1,9 @@
+{
+	"name": "BUTTON_LOGIN_MAINMENU",
+	"plugin-id": "Button",
+	"sid": 702781048004045,
+	"isGlobal": false,
+	"editorNewInstanceIsReplica": true,
+	"instanceVariables": [],
+	"behaviorTypes": []
+}

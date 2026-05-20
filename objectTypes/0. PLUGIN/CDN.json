@@ -1,0 +1,12 @@
+{
+	"name": "CDN",
+	"plugin-id": "CV_PlayFabClient_CDN",
+	"sid": 119304852761231,
+	"singleglobal-inst": {
+		"type": "CDN",
+		"properties": {},
+		"uid": 5,
+		"sid": 894314135649755,
+		"tags": ""
+	}
+}

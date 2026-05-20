@@ -1,0 +1,12 @@
+{
+	"name": "Authentication",
+	"plugin-id": "CV_PlayFabClient_Authentication",
+	"sid": 690461835240675,
+	"singleglobal-inst": {
+		"type": "Authentication",
+		"properties": {},
+		"uid": 15,
+		"sid": 444729493634632,
+		"tags": ""
+	}
+}

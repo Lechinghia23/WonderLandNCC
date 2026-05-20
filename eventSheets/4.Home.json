@@ -1,0 +1,151 @@
+{
+	"name": "4.Home",
+	"events": [
+		{
+			"eventType": "group",
+			"disabled": false,
+			"title": "0. KHỞI TẠO HOME",
+			"description": "",
+			"isActiveOnStart": true,
+			"children": [
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "on-start-of-layout",
+							"objectClass": "System",
+							"sid": 135053046469566
+						}
+					],
+					"actions": [
+						{
+							"id": "set-css-style",
+							"objectClass": "NUT_NHAN",
+							"sid": 234977311176191,
+							"parameters": {
+								"property-name": "\"border\"",
+								"value": "\"none\""
+							}
+						},
+						{
+							"id": "set-css-style",
+							"objectClass": "NUT_NHAN",
+							"sid": 138415695855805,
+							"parameters": {
+								"property-name": "\"background\"",
+								"value": "\"none\""
+							}
+						}
+					],
+					"sid": 151953025149395
+				}
+			],
+			"sid": 295736366753493
+		},
+		{
+			"eventType": "group",
+			"disabled": false,
+			"title": "1. BUTTON UI HOME",
+			"description": "",
+			"isActiveOnStart": true,
+			"children": [
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "on-clicked",
+							"objectClass": "BUTTON_SHOP",
+							"sid": 542764079433273
+						}
+					],
+					"actions": [
+						{
+							"id": "set-animation",
+							"objectClass": "UIHOME",
+							"sid": 565181652814701,
+							"parameters": {
+								"animation": "\"OPEN SHOP\"",
+								"from": "beginning"
+							}
+						},
+						{
+							"id": "wait",
+							"objectClass": "System",
+							"sid": 434726009683884,
+							"parameters": {
+								"seconds": "0.1",
+								"use-timescale": true
+							}
+						},
+						{
+							"id": "set-layer-visible",
+							"objectClass": "System",
+							"sid": 381232187238638,
+							"parameters": {
+								"layer": "\"SHOP\"",
+								"visibility": "visible"
+							}
+						},
+						{
+							"id": "set-animation",
+							"objectClass": "UIHOME",
+							"sid": 486193966165689,
+							"parameters": {
+								"animation": "\"Animation 1\"",
+								"from": "beginning"
+							}
+						}
+					],
+					"sid": 974470610330262
+				}
+			],
+			"sid": 908017889885359
+		},
+		{
+			"eventType": "group",
+			"disabled": false,
+			"title": "2. NHẤN VÀO BUTTON SHOP",
+			"description": "",
+			"isActiveOnStart": true,
+			"children": [
+				{
+					"eventType": "comment",
+					"text": "Khi nhấn vào BUTTON SHOP (Cửa hàng). Sẽ hiển thị lên Layer Cửa Hàng và hiển thị Danh mục vật phẩm đầu tiên"
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "on-clicked",
+							"objectClass": "BUTTON_SHOP",
+							"sid": 682217707435710
+						}
+					],
+					"actions": [
+						{
+							"id": "set-layer-visible",
+							"objectClass": "System",
+							"sid": 864890970487178,
+							"parameters": {
+								"layer": "\"SHOP\"",
+								"visibility": "visible"
+							}
+						},
+						{
+							"id": "set-layer-visible",
+							"objectClass": "System",
+							"sid": 876234098099320,
+							"parameters": {
+								"layer": "\"SHOP VAT PHAM\"",
+								"visibility": "visible"
+							}
+						}
+					],
+					"sid": 453918718869451
+				}
+			],
+			"sid": 661079728823739
+		}
+	],
+	"sid": 637273180078033
+}

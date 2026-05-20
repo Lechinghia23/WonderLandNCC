@@ -1,0 +1,9 @@
+{
+	"name": "BUTTON_FRIENDS",
+	"plugin-id": "Button",
+	"sid": 163108072073168,
+	"isGlobal": false,
+	"editorNewInstanceIsReplica": true,
+	"instanceVariables": [],
+	"behaviorTypes": []
+}

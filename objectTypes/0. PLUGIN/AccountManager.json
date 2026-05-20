@@ -1,0 +1,12 @@
+{
+	"name": "AccountManager",
+	"plugin-id": "CV_PlayFabClient_AccountManager",
+	"sid": 463834278388698,
+	"singleglobal-inst": {
+		"type": "AccountManager",
+		"properties": {},
+		"uid": 3,
+		"sid": 595364775462606,
+		"tags": ""
+	}
+}

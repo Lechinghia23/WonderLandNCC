@@ -1,0 +1,12 @@
+{
+	"name": "TitleManager",
+	"plugin-id": "CV_PlayFabClient_TitleManager",
+	"sid": 432660901930431,
+	"singleglobal-inst": {
+		"type": "TitleManager",
+		"properties": {},
+		"uid": 10,
+		"sid": 944097142753176,
+		"tags": ""
+	}
+}

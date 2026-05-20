@@ -1,0 +1,12 @@
+{
+	"name": "FriendManager",
+	"plugin-id": "CV_PlayFabClient_FriendManager",
+	"sid": 841164184200414,
+	"singleglobal-inst": {
+		"type": "FriendManager",
+		"properties": {},
+		"uid": 6,
+		"sid": 968514030914426,
+		"tags": ""
+	}
+}

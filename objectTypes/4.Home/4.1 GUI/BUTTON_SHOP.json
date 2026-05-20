@@ -1,0 +1,9 @@
+{
+	"name": "BUTTON_SHOP",
+	"plugin-id": "Button",
+	"sid": 172248793645371,
+	"isGlobal": false,
+	"editorNewInstanceIsReplica": true,
+	"instanceVariables": [],
+	"behaviorTypes": []
+}

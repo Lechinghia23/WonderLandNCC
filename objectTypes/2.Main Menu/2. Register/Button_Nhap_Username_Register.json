@@ -1,0 +1,9 @@
+{
+	"name": "Button_Nhap_Username_Register",
+	"plugin-id": "Button",
+	"sid": 272933001308606,
+	"isGlobal": false,
+	"editorNewInstanceIsReplica": true,
+	"instanceVariables": [],
+	"behaviorTypes": []
+}

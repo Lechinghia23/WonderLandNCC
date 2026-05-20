@@ -1,0 +1,515 @@
+{
+	"name": "3.Loading",
+	"events": [
+		{
+			"eventType": "group",
+			"disabled": false,
+			"title": "0. KHI BẮT ĐẦU VÀO LOADING",
+			"description": "",
+			"isActiveOnStart": true,
+			"children": [
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "on-start-of-layout",
+							"objectClass": "System",
+							"sid": 552246355679459
+						}
+					],
+					"actions": [
+						{
+							"id": "getglobalThisaccountinfo1",
+							"objectClass": "AccountInfo",
+							"sid": 305734545898226,
+							"parameters": {
+								"tag_:0": "\"\""
+							}
+						},
+						{
+							"id": "getfriendslist7",
+							"objectClass": "FriendManager",
+							"sid": 791517391699446,
+							"parameters": {
+								"facebook_friends_:2": "include",
+								"steam_friends_:5": "include",
+								"xbox_friends_:8": "exclude",
+								"xbox_token_:9": "\"\"",
+								"tag": "\"\""
+							}
+						},
+						{
+							"id": "getuserinventory2",
+							"objectClass": "VirtualCurrencies",
+							"sid": 160314247255587,
+							"parameters": {
+								"tag": "\"\""
+							}
+						},
+						{
+							"id": "getalluserdata2",
+							"objectClass": "UserData",
+							"sid": 639871790515815,
+							"parameters": {
+								"tag": "\"Diavi\""
+							}
+						},
+						{
+							"id": "set-text",
+							"objectClass": "RandomText",
+							"sid": 648936028312802,
+							"parameters": {
+								"text": "choose(\"Câu văn thứ nhất\", \"Câu văn thứ hai\", \"Chào bạn nhé!\", \"Chúc may mắn!\")"
+							}
+						}
+					],
+					"sid": 980728992100495
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "ongetuserinventory4",
+							"objectClass": "VirtualCurrencies",
+							"sid": 745860239664948
+						}
+					],
+					"actions": [],
+					"sid": 457452890625025,
+					"children": [
+						{
+							"eventType": "block",
+							"conditions": [
+								{
+									"id": "foreachinventory14",
+									"objectClass": "VirtualCurrencies",
+									"sid": 903667504249370
+								}
+							],
+							"actions": [
+								{
+									"id": "add-key",
+									"objectClass": "DULIEUCHUNG",
+									"sid": 462881155374697,
+									"parameters": {
+										"key": "VirtualCurrencies.purDisplayName",
+										"value": "VirtualCurrencies.purDisplayName"
+									}
+								}
+							],
+							"sid": 508084636995307
+						}
+					]
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "ongetuserinventory_error5",
+							"objectClass": "VirtualCurrencies",
+							"sid": 883774203556046
+						}
+					],
+					"actions": [
+						{
+							"id": "add-key",
+							"objectClass": "DULIEUCHUNG",
+							"sid": 417804300475762,
+							"parameters": {
+								"key": "\"Elaira\"",
+								"value": "\"Elaira\""
+							}
+						},
+						{
+							"id": "go-to-layout",
+							"objectClass": "System",
+							"sid": 177304646740430,
+							"parameters": {
+								"layout": "1.Splash Screen"
+							}
+						}
+					],
+					"sid": 446390807756079
+				}
+			],
+			"sid": 335595270796739
+		},
+		{
+			"eventType": "group",
+			"disabled": false,
+			"title": "1. TIẾN TRÌNH LOADING",
+			"description": "",
+			"isActiveOnStart": true,
+			"children": [
+				{
+					"eventType": "variable",
+					"name": "TIENTRINHTAI",
+					"type": "number",
+					"initialValue": "48",
+					"comment": "",
+					"isStatic": false,
+					"isConstant": false,
+					"sid": 977296208984468
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "every-tick",
+							"objectClass": "System",
+							"sid": 952551934724265
+						},
+						{
+							"id": "compare-two-values",
+							"objectClass": "System",
+							"sid": 139092430684430,
+							"parameters": {
+								"first-value": "TIENTRINHTAI",
+								"comparison": 2,
+								"second-value": "870"
+							}
+						}
+					],
+					"actions": [
+						{
+							"id": "set-eventvar-value",
+							"objectClass": "System",
+							"sid": 230026711319718,
+							"parameters": {
+								"variable": "TIENTRINHTAI",
+								"value": "TIENTRINHTAI+random(0,7)"
+							}
+						}
+					],
+					"sid": 435009598038975
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "every-tick",
+							"objectClass": "System",
+							"sid": 941513386609805
+						}
+					],
+					"actions": [
+						{
+							"id": "set-size",
+							"objectClass": "TIENTRINH",
+							"sid": 527256281035750,
+							"parameters": {
+								"width": "TIENTRINHTAI",
+								"height": "16"
+							}
+						},
+						{
+							"id": "set-position",
+							"objectClass": "LOADINGPOINTS",
+							"sid": 127430439237959,
+							"parameters": {
+								"x": "TIENTRINHTAI+62",
+								"y": "420"
+							}
+						}
+					],
+					"sid": 571772137806404
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "every-x-seconds",
+							"objectClass": "System",
+							"sid": 155066900382796,
+							"parameters": {
+								"interval-seconds": "2"
+							}
+						}
+					],
+					"actions": [
+						{
+							"id": "set-text",
+							"objectClass": "RandomText",
+							"sid": 311229519672170,
+							"parameters": {
+								"text": "choose(\"Câu văn thứ nhất\", \"Câu văn thứ hai\", \"Chào bạn nhé!\", \"Chúc may mắn!\")"
+							}
+						}
+					],
+					"sid": 758986196324083
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "every-tick",
+							"objectClass": "System",
+							"sid": 236827768460403
+						},
+						{
+							"id": "compare-two-values",
+							"objectClass": "System",
+							"sid": 779073008841436,
+							"parameters": {
+								"first-value": "TIENTRINHTAI",
+								"comparison": 4,
+								"second-value": "870"
+							}
+						}
+					],
+					"actions": [
+						{
+							"id": "go-to-layout",
+							"objectClass": "System",
+							"sid": 144390947144599,
+							"parameters": {
+								"layout": "4.Home"
+							}
+						}
+					],
+					"sid": 174611806608371
+				}
+			],
+			"sid": 995817687135969
+		},
+		{
+			"eventType": "group",
+			"disabled": false,
+			"title": "2. DỮ LIỆU LOADING",
+			"description": "",
+			"isActiveOnStart": true,
+			"children": [
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "has-key",
+							"objectClass": "DULIEUCHUNG",
+							"sid": 585004190496921,
+							"parameters": {
+								"key": "\"Elaira\""
+							},
+							"isInverted": true
+						}
+					],
+					"actions": [
+						{
+							"id": "planwriteuserdata12",
+							"objectClass": "UserData",
+							"sid": 837458295704769,
+							"parameters": {
+								"key_:0": "\"DLG\"",
+								"value_:1": "0"
+							}
+						},
+						{
+							"id": "planwriteuserdata12",
+							"objectClass": "UserData",
+							"sid": 107093923638965,
+							"parameters": {
+								"key_:0": "\"HLG\"",
+								"value_:1": "0"
+							}
+						},
+						{
+							"id": "planwriteuserdata12",
+							"objectClass": "UserData",
+							"sid": 707091323814777,
+							"parameters": {
+								"key_:0": "\"MLG\"",
+								"value_:1": "0"
+							}
+						},
+						{
+							"id": "planwriteuserdata12",
+							"objectClass": "UserData",
+							"sid": 988177455195898,
+							"parameters": {
+								"key_:0": "\"Level\"",
+								"value_:1": "0"
+							}
+						},
+						{
+							"id": "planwriteuserdata12",
+							"objectClass": "UserData",
+							"sid": 207411540323687,
+							"parameters": {
+								"key_:0": "\"Exp\"",
+								"value_:1": "0"
+							}
+						},
+						{
+							"id": "planwriteuserdata12",
+							"objectClass": "UserData",
+							"sid": 699663684753815,
+							"parameters": {
+								"key_:0": "\"Description\"",
+								"value_:1": "0"
+							}
+						},
+						{
+							"id": "planwriteuserdata12",
+							"objectClass": "UserData",
+							"sid": 817775164568574,
+							"parameters": {
+								"key_:0": "\"Rankcaonhat\"",
+								"value_:1": "0"
+							}
+						},
+						{
+							"id": "planwriteuserdata12",
+							"objectClass": "UserData",
+							"sid": 664814872261226,
+							"parameters": {
+								"key_:0": "\"Rankhientai\"",
+								"value_:1": "0"
+							}
+						},
+						{
+							"id": "planwriteuserdata12",
+							"objectClass": "UserData",
+							"sid": 877327454441475,
+							"parameters": {
+								"key_:0": "\"Exprank\"",
+								"value_:1": "0"
+							}
+						},
+						{
+							"id": "planwriteuserdata12",
+							"objectClass": "UserData",
+							"sid": 170141942288621,
+							"parameters": {
+								"key_:0": "\"Season\"",
+								"value_:1": "0"
+							}
+						},
+						{
+							"id": "updateuserdata14",
+							"objectClass": "UserData",
+							"sid": 169771780645835,
+							"parameters": {
+								"permission_:2": "private",
+								"tag": "\"\""
+							}
+						}
+					],
+					"sid": 476630595484775
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "updateuserdata8",
+							"objectClass": "UserData",
+							"sid": 949676986901763
+						}
+					],
+					"actions": [
+						{
+							"id": "planwriteuserdata12",
+							"objectClass": "UserData",
+							"sid": 482927494746610,
+							"parameters": {
+								"key_:0": "\"CharThuongDung1\"",
+								"value_:1": "0"
+							}
+						},
+						{
+							"id": "planwriteuserdata12",
+							"objectClass": "UserData",
+							"sid": 221387097768921,
+							"parameters": {
+								"key_:0": "\"CharThuongDung2\"",
+								"value_:1": "0"
+							}
+						},
+						{
+							"id": "planwriteuserdata12",
+							"objectClass": "UserData",
+							"sid": 597084185864527,
+							"parameters": {
+								"key_:0": "\"CharThuongDung3\"",
+								"value_:1": "0"
+							}
+						},
+						{
+							"id": "planwriteuserdata12",
+							"objectClass": "UserData",
+							"sid": 498818946746878,
+							"parameters": {
+								"key_:0": "\"GLCL\"",
+								"value_:1": "0"
+							}
+						},
+						{
+							"id": "planwriteuserdata12",
+							"objectClass": "UserData",
+							"sid": 496303330005210,
+							"parameters": {
+								"key_:0": "\"GLCW\"",
+								"value_:1": "0"
+							}
+						},
+						{
+							"id": "planwriteuserdata12",
+							"objectClass": "UserData",
+							"sid": 333142285361788,
+							"parameters": {
+								"key_:0": "\"GLCTL\"",
+								"value_:1": "0"
+							}
+						},
+						{
+							"id": "planwriteuserdata12",
+							"objectClass": "UserData",
+							"sid": 746624463921527,
+							"parameters": {
+								"key_:0": "\"GLCTW\"",
+								"value_:1": "0"
+							}
+						},
+						{
+							"id": "planwriteuserdata12",
+							"objectClass": "UserData",
+							"sid": 981149592565611,
+							"parameters": {
+								"key_:0": "\"GLGTL\"",
+								"value_:1": "0"
+							}
+						},
+						{
+							"id": "planwriteuserdata12",
+							"objectClass": "UserData",
+							"sid": 467000357939618,
+							"parameters": {
+								"key_:0": "\"GLGTW\"",
+								"value_:1": "0"
+							}
+						},
+						{
+							"id": "planwriteuserdata12",
+							"objectClass": "UserData",
+							"sid": 100447122001586,
+							"parameters": {
+								"key_:0": "\"Diavi\"",
+								"value_:1": "0"
+							}
+						},
+						{
+							"id": "updateuserdata14",
+							"objectClass": "UserData",
+							"sid": 135766820751121,
+							"parameters": {
+								"permission_:2": "private",
+								"tag": "\"\""
+							}
+						}
+					],
+					"sid": 987744859552572
+				}
+			],
+			"sid": 315373488375966
+		}
+	],
+	"sid": 233769227744821
+}

@@ -1,0 +1,12 @@
+{
+	"name": "Publisher",
+	"plugin-id": "CV_PlayFabClient_Publisher",
+	"sid": 733892752652632,
+	"singleglobal-inst": {
+		"type": "Publisher",
+		"properties": {},
+		"uid": 9,
+		"sid": 133527430001037,
+		"tags": ""
+	}
+}

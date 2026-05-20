@@ -1,0 +1,12 @@
+{
+	"name": "UserData",
+	"plugin-id": "CV_PlayFabClient_UserData",
+	"sid": 531403155067041,
+	"singleglobal-inst": {
+		"type": "UserData",
+		"properties": {},
+		"uid": 11,
+		"sid": 685229863929253,
+		"tags": ""
+	}
+}

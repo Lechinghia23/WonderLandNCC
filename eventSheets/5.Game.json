@@ -1,0 +1,104 @@
+{
+	"name": "5.Game",
+	"events": [
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-start-of-layout",
+					"objectClass": "System",
+					"sid": 231513882409624
+				}
+			],
+			"actions": [
+				{
+					"id": "set-css-style",
+					"objectClass": "Button",
+					"sid": 336779888722086,
+					"parameters": {
+						"property-name": "\"border\"",
+						"value": "\"none\""
+					}
+				},
+				{
+					"id": "set-css-style",
+					"objectClass": "Button",
+					"sid": 591730895365906,
+					"parameters": {
+						"property-name": "\"background\"",
+						"value": "\"none\""
+					}
+				},
+				{
+					"id": "tween-one-property",
+					"objectClass": "Sprite2",
+					"sid": 483548084323566,
+					"behaviorType": "Tween",
+					"parameters": {
+						"tags": "\"\"",
+						"property": "offsetX",
+						"end-value": "648",
+						"time": "1.5",
+						"ease": "noease",
+						"destroy-on-complete": "no",
+						"loop": "yes",
+						"ping-pong": "yes",
+						"repeat-count": "0"
+					}
+				}
+			],
+			"sid": 656841332524170
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-clicked",
+					"objectClass": "Button",
+					"sid": 591982701336603
+				}
+			],
+			"actions": [
+				{
+					"id": "set-animation",
+					"objectClass": "TOUCH",
+					"sid": 239288327864153,
+					"parameters": {
+						"animation": "\"Animation 2\"",
+						"from": "beginning"
+					}
+				}
+			],
+			"sid": 501487427663956,
+			"children": [
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "compare-two-values",
+							"objectClass": "System",
+							"sid": 890537379081591,
+							"parameters": {
+								"first-value": "abs(Sprite2.X - Sprite3.X)",
+								"comparison": 3,
+								"second-value": "7"
+							}
+						}
+					],
+					"actions": [
+						{
+							"id": "set-x",
+							"objectClass": "Sprite3",
+							"sid": 334141929729774,
+							"parameters": {
+								"x": "random(344, 640)"
+							}
+						}
+					],
+					"sid": 592117381766167
+				}
+			]
+		}
+	],
+	"sid": 460146954723663
+}

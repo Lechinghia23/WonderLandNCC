@@ -1,0 +1,10 @@
+{
+	"name": "Username_Login",
+	"plugin-id": "Text",
+	"sid": 455602447559197,
+	"isGlobal": false,
+	"editorNewInstanceIsReplica": true,
+	"instanceVariables": [],
+	"behaviorTypes": [],
+	"effectTypes": []
+}

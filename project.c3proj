@@ -1,0 +1,554 @@
+{
+	"projectFormatVersion": 1,
+	"savedWithRelease": 47604,
+	"name": "WonderLand_2026",
+	"runtime": "c3",
+	"useWorker": "auto",
+	"bundleAddons": false,
+	"usedAddons": [
+		{
+			"type": "plugin",
+			"id": "Button",
+			"name": "Button",
+			"author": "Scirra",
+			"bundled": false
+		},
+		{
+			"type": "plugin",
+			"id": "CV_PlayFabClient_APIModule",
+			"name": "PlayFab API",
+			"author": "Chadori",
+			"bundled": false,
+			"version": "56.0",
+			"sdkVersion": 2
+		},
+		{
+			"type": "plugin",
+			"id": "CV_PlayFabClient_AccountInformation",
+			"name": "Account Info",
+			"author": "Chadori",
+			"bundled": false,
+			"version": "56.0",
+			"sdkVersion": 2
+		},
+		{
+			"type": "plugin",
+			"id": "CV_PlayFabClient_AccountManager",
+			"name": "Account Manager",
+			"author": "Chadori",
+			"bundled": false,
+			"version": "56.0",
+			"sdkVersion": 2
+		},
+		{
+			"type": "plugin",
+			"id": "CV_PlayFabClient_Analytics",
+			"name": "Analytics",
+			"author": "Chadori",
+			"bundled": false,
+			"version": "56.0",
+			"sdkVersion": 2
+		},
+		{
+			"type": "plugin",
+			"id": "CV_PlayFabClient_Authentication",
+			"name": "Authentication",
+			"author": "Chadori",
+			"bundled": false,
+			"version": "56.0",
+			"sdkVersion": 2
+		},
+		{
+			"type": "plugin",
+			"id": "CV_PlayFabClient_CDN",
+			"name": "CDN",
+			"author": "Chadori",
+			"bundled": false,
+			"version": "56.0",
+			"sdkVersion": 2
+		},
+		{
+			"type": "plugin",
+			"id": "CV_PlayFabClient_FriendManager",
+			"name": "Friend Manager",
+			"author": "Chadori",
+			"bundled": false,
+			"version": "56.0",
+			"sdkVersion": 2
+		},
+		{
+			"type": "plugin",
+			"id": "CV_PlayFabClient_Leaderboards",
+			"name": "Leaderboards",
+			"author": "Chadori",
+			"bundled": false,
+			"version": "56.0",
+			"sdkVersion": 2
+		},
+		{
+			"type": "plugin",
+			"id": "CV_PlayFabClient_PlayerManager",
+			"name": "Player Manager",
+			"author": "Chadori",
+			"bundled": false,
+			"version": "56.0",
+			"sdkVersion": 2
+		},
+		{
+			"type": "plugin",
+			"id": "CV_PlayFabClient_Publisher",
+			"name": "Publisher",
+			"author": "Chadori",
+			"bundled": false,
+			"version": "56.0",
+			"sdkVersion": 2
+		},
+		{
+			"type": "plugin",
+			"id": "CV_PlayFabClient_SyncManager",
+			"name": "Sync Manager",
+			"author": "Chadori",
+			"bundled": false,
+			"version": "56.0",
+			"sdkVersion": 2
+		},
+		{
+			"type": "plugin",
+			"id": "CV_PlayFabClient_TitleManager",
+			"name": "Title Manager",
+			"author": "Chadori",
+			"bundled": false,
+			"version": "56.0",
+			"sdkVersion": 2
+		},
+		{
+			"type": "plugin",
+			"id": "CV_PlayFabClient_UserData",
+			"name": "User Data",
+			"author": "Chadori",
+			"bundled": false,
+			"version": "56.0",
+			"sdkVersion": 2
+		},
+		{
+			"type": "plugin",
+			"id": "CV_PlayFabClient_VirtualCurrencies",
+			"name": "Virtual Currencies",
+			"author": "Chadori",
+			"bundled": false,
+			"version": "56.0",
+			"sdkVersion": 2
+		},
+		{
+			"type": "plugin",
+			"id": "Chadori_PlayFab_Advertising",
+			"name": "Advertising",
+			"author": "Chadori",
+			"bundled": false,
+			"version": "56.0",
+			"sdkVersion": 2
+		},
+		{
+			"type": "plugin",
+			"id": "Dictionary",
+			"name": "Dictionary",
+			"author": "Scirra",
+			"bundled": false
+		},
+		{
+			"type": "plugin",
+			"id": "LocalStorage",
+			"name": "Local storage",
+			"author": "Scirra",
+			"bundled": false
+		},
+		{
+			"type": "plugin",
+			"id": "Sprite",
+			"name": "Sprite",
+			"author": "Scirra",
+			"bundled": false
+		},
+		{
+			"type": "plugin",
+			"id": "Text",
+			"name": "Text",
+			"author": "Scirra",
+			"bundled": false
+		},
+		{
+			"type": "plugin",
+			"id": "TextBox",
+			"name": "Text input",
+			"author": "Scirra",
+			"bundled": false
+		},
+		{
+			"type": "behavior",
+			"id": "Tween",
+			"name": "Tween",
+			"author": "Scirra",
+			"bundled": false
+		}
+	],
+	"uniqueId": "a7g3sitx5pu",
+	"objectTypes": {
+		"items": [],
+		"subfolders": [
+			{
+				"items": [
+					"AccountInfo",
+					"AccountManager",
+					"Analytics",
+					"CDN",
+					"FriendManager",
+					"Leaderboards",
+					"PlayerManager",
+					"Publisher",
+					"TitleManager",
+					"UserData",
+					"PlayFabAPI",
+					"Advertising",
+					"VirtualCurrencies",
+					"Authentication",
+					"SyncManager",
+					"LocalStorage"
+				],
+				"subfolders": [],
+				"name": "0. PLUGIN"
+			},
+			{
+				"items": [],
+				"subfolders": [
+					{
+						"items": [
+							"Username_Login",
+							"Password_Login",
+							"Password_Login2",
+							"Button_Nhap_Username_Login",
+							"Button_Nhap_Password_Login",
+							"Button_Nho_MK"
+						],
+						"subfolders": [],
+						"name": "1. Login"
+					},
+					{
+						"items": [
+							"Username_Register",
+							"DisplayName_Register",
+							"Email_Register",
+							"Password_Register",
+							"Button_Nhap_Username_Register",
+							"Button_Nhap_DisplayName_Register",
+							"Button_Nhap_Email_Register",
+							"Button_Nhap_Password_Register"
+						],
+						"subfolders": [],
+						"name": "2. Register"
+					},
+					{
+						"items": [],
+						"subfolders": [],
+						"name": "3. Miss Pass"
+					},
+					{
+						"items": [],
+						"subfolders": [],
+						"name": "4. Noti"
+					},
+					{
+						"items": [
+							"KHUNGNHAPAOCHUNG",
+							"Username_NhapAo_Login",
+							"Password_NhapAo_Login",
+							"Usename_NhapAo_Register",
+							"DisplayName_NhapAo_Register",
+							"Email_NhapAo_Register",
+							"Password_NhapAo_Register"
+						],
+						"subfolders": [],
+						"name": "5. Nhap Ao"
+					},
+					{
+						"items": [
+							"BUTTON_LAYER_MAINMENU",
+							"BUTTON_LOGIN_MAINMENU",
+							"MainMenu",
+							"BUTTON_REGISTER_MAINMENU",
+							"PopupBáoLỗi"
+						],
+						"subfolders": [],
+						"name": "0. Chung Main Menu"
+					}
+				],
+				"name": "2.Main Menu"
+			},
+			{
+				"items": [],
+				"subfolders": [
+					{
+						"items": [
+							"UsernameHome",
+							"CHUNGINF",
+							"BACK",
+							"TAGMENUHOMEINFO"
+						],
+						"subfolders": [],
+						"name": "4.2 Thông tin"
+					},
+					{
+						"items": [],
+						"subfolders": [],
+						"name": "4.4 Tilemap Home"
+					},
+					{
+						"items": [
+							"BGSHOP",
+							"MASKCHE",
+							"TAGDANHMUCSHOP",
+							"BUTTONTAGDANHMUCSHOP"
+						],
+						"subfolders": [],
+						"name": "4.3 Cửa hàng"
+					},
+					{
+						"items": [
+							"PLAYBUTTON",
+							"SeasonGUI",
+							"UIHOME",
+							"BUTTON_SHOP",
+							"BUTTON_GACHA",
+							"BUTTON_DAILY",
+							"BUTTON_EVENTS",
+							"BUTTON_INFO",
+							"BUTTON_FRIENDS",
+							"BUTTON_CHAT",
+							"BUTTON_CHATWORLD",
+							"BUTTON_CITY"
+						],
+						"subfolders": [],
+						"name": "4.1 GUI"
+					}
+				],
+				"name": "4.Home"
+			},
+			{
+				"items": [
+					"Sprite",
+					"Sprite2",
+					"TOUCH",
+					"Button",
+					"Sprite3"
+				],
+				"subfolders": [],
+				"name": "5.Game"
+			},
+			{
+				"items": [
+					"THANHLOADINGRỖNG",
+					"LOADINGPOINTS",
+					"TIENTRINH",
+					"RandomText",
+					"DULIEUCHUNG"
+				],
+				"subfolders": [],
+				"name": "3.Loading"
+			}
+		]
+	},
+	"functionsName": "Functions",
+	"autosaveData": null,
+	"containers": [],
+	"families": {
+		"items": [
+			"NUT_NHAN"
+		],
+		"subfolders": []
+	},
+	"layouts": {
+		"items": [
+			"1.Splash Screen",
+			"2.Main Menu",
+			"3.Loading",
+			"4.Home",
+			"5. GAME"
+		],
+		"subfolders": []
+	},
+	"eventSheets": {
+		"items": [
+			"1.Splash Screen",
+			"2.Main Menu",
+			"3.Loading",
+			"4.Home",
+			"5.Game"
+		],
+		"subfolders": []
+	},
+	"rootFileFolders": {
+		"script": {
+			"items": [],
+			"subfolders": []
+		},
+		"sound": {
+			"items": [],
+			"subfolders": []
+		},
+		"music": {
+			"items": [],
+			"subfolders": []
+		},
+		"video": {
+			"items": [],
+			"subfolders": []
+		},
+		"font": {
+			"items": [],
+			"subfolders": []
+		},
+		"icon": {
+			"items": [
+				{
+					"name": "icon-32.png",
+					"type": "image/png",
+					"sid": 337949561120974,
+					"icon-info": {
+						"purpose": "app-icon"
+					}
+				},
+				{
+					"name": "icon-64.png",
+					"type": "image/png",
+					"sid": 666420840297151,
+					"icon-info": {
+						"purpose": "app-icon"
+					}
+				},
+				{
+					"name": "icon-256.png",
+					"type": "image/png",
+					"sid": 747414679057944,
+					"icon-info": {
+						"purpose": "app-icon"
+					}
+				},
+				{
+					"name": "icon-128.png",
+					"type": "image/png",
+					"sid": 508241880753888,
+					"icon-info": {
+						"purpose": "app-icon"
+					}
+				},
+				{
+					"name": "icon-512.png",
+					"type": "image/png",
+					"sid": 246412079117840,
+					"icon-info": {
+						"purpose": "app-icon"
+					}
+				},
+				{
+					"name": "icon-16.png",
+					"type": "image/png",
+					"sid": 204171600911350,
+					"icon-info": {
+						"purpose": "app-icon"
+					}
+				},
+				{
+					"name": "loading-logo.png",
+					"type": "image/png",
+					"sid": 447543967661966,
+					"icon-info": {
+						"purpose": "loading-logo"
+					}
+				}
+			],
+			"subfolders": []
+		},
+		"general": {
+			"items": [],
+			"subfolders": []
+		}
+	},
+	"timelines": {
+		"items": [
+			"Timeline 1"
+		],
+		"subfolders": [
+			{
+				"items": [],
+				"subfolders": []
+			}
+		]
+	},
+	"flowcharts": {
+		"items": [
+			"Flowchart 1"
+		],
+		"subfolders": []
+	},
+	"models3d": {
+		"items": [],
+		"subfolders": []
+	},
+	"properties": {
+		"description": "Test",
+		"version": "1.0.0.0",
+		"autoIncrementVersion": false,
+		"author": "Nat",
+		"authorEmail": "Nghiafram@gmail.com",
+		"authorWebsite": "",
+		"appId": "com.company.wonderland",
+		"pixelRounding": true,
+		"zAxisScale": "regular",
+		"fov": 0.7853981633974483,
+		"useLoaderLayout": false,
+		"fullscreenMode": "letterbox-integer-scale",
+		"fullscreenQuality": "low",
+		"viewportFit": "auto",
+		"backgroundColor": [
+			0,
+			0,
+			0,
+			0
+		],
+		"splashColor": [
+			1,
+			1,
+			1,
+			0
+		],
+		"useThemeColor": false,
+		"themeColor": [
+			1,
+			1,
+			1,
+			0
+		],
+		"orientations": "landscape",
+		"webgpu": "auto",
+		"multitexturing": "auto",
+		"gpuPreference": "high-performance",
+		"framerateMode": "vsync",
+		"fixedFramerate": 30,
+		"sampling": "nearest",
+		"downscaling": "medium",
+		"renderingMode": "auto",
+		"anisotropicFiltering": "auto",
+		"zNear": 1,
+		"zFar": 10000,
+		"maxSpriteSheetSize": 2048,
+		"loaderStyle": "splash",
+		"preloadSounds": true,
+		"uidAllocationMode": "increment",
+		"cordovaiOSScheme": "app",
+		"cordovaAndroidScheme": "https",
+		"exportFileStructure": "folders",
+		"scriptsType": "module"
+	},
+	"viewportWidth": 1013,
+	"viewportHeight": 480,
+	"firstLayout": "1.Splash Screen"
+}

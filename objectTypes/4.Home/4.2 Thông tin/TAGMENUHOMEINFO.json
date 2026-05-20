@@ -1,0 +1,237 @@
+{
+	"name": "TAGMENUHOMEINFO",
+	"plugin-id": "Sprite",
+	"sid": 273951453442939,
+	"isGlobal": false,
+	"editorNewInstanceIsReplica": true,
+	"instanceVariables": [],
+	"behaviorTypes": [],
+	"effectTypes": [],
+	"animations": {
+		"items": [
+			{
+				"frames": [
+					{
+						"width": 1013,
+						"height": 480,
+						"originX": 0.5,
+						"originY": 0.5,
+						"originalSource": "",
+						"exportFormat": "lossless",
+						"exportQuality": 0.8,
+						"fileType": "image/png",
+						"imageSpriteId": 45505,
+						"collisionPoly": {
+							"points": [
+								0.014807502467917079,
+								0.17291666666666666,
+								0.15004935834155972,
+								0.17291666666666666,
+								0.15004935834155972,
+								0.8875,
+								0.014807502467917079,
+								0.8875
+							]
+						},
+						"useCollisionPoly": true,
+						"duration": 1,
+						"tag": ""
+					}
+				],
+				"sid": 882664197374857,
+				"name": "Thongtinnguoichoi",
+				"isLooping": false,
+				"isPingPong": false,
+				"repeatCount": 1,
+				"repeatTo": 0,
+				"speed": 5
+			},
+			{
+				"frames": [
+					{
+						"width": 1013,
+						"height": 480,
+						"originX": 0.5,
+						"originY": 0.5,
+						"originalSource": "",
+						"exportFormat": "lossless",
+						"exportQuality": 0.8,
+						"fileType": "image/png",
+						"imageSpriteId": 3686290,
+						"collisionPoly": {
+							"points": [
+								0.014807502467917079,
+								0.17291666666666666,
+								0.15004935834155972,
+								0.17291666666666666,
+								0.15004935834155972,
+								0.8875,
+								0.014807502467917079,
+								0.8875
+							]
+						},
+						"useCollisionPoly": true,
+						"duration": 1,
+						"tag": ""
+					}
+				],
+				"sid": 916180295050772,
+				"name": "Capdo",
+				"isLooping": false,
+				"isPingPong": false,
+				"repeatCount": 1,
+				"repeatTo": 0,
+				"speed": 5
+			},
+			{
+				"frames": [
+					{
+						"width": 1013,
+						"height": 480,
+						"originX": 0.5,
+						"originY": 0.5,
+						"originalSource": "",
+						"exportFormat": "lossless",
+						"exportQuality": 0.8,
+						"fileType": "image/png",
+						"imageSpriteId": 1015356,
+						"collisionPoly": {
+							"points": [
+								0.014807502467917079,
+								0.17291666666666666,
+								0.15004935834155972,
+								0.17291666666666666,
+								0.15004935834155972,
+								0.8875,
+								0.014807502467917079,
+								0.8875
+							]
+						},
+						"useCollisionPoly": true,
+						"duration": 1,
+						"tag": ""
+					}
+				],
+				"sid": 508303179681392,
+				"name": "Thongsotrandau",
+				"isLooping": false,
+				"isPingPong": false,
+				"repeatCount": 1,
+				"repeatTo": 0,
+				"speed": 5
+			},
+			{
+				"frames": [
+					{
+						"width": 1013,
+						"height": 480,
+						"originX": 0.5,
+						"originY": 0.5,
+						"originalSource": "",
+						"exportFormat": "lossless",
+						"exportQuality": 0.8,
+						"fileType": "image/png",
+						"imageSpriteId": 7201084,
+						"collisionPoly": {
+							"points": [
+								0.014807502467917079,
+								0.17291666666666666,
+								0.15004935834155972,
+								0.17291666666666666,
+								0.15004935834155972,
+								0.8875,
+								0.014807502467917079,
+								0.8875
+							]
+						},
+						"useCollisionPoly": true,
+						"duration": 1,
+						"tag": ""
+					}
+				],
+				"sid": 765965644289000,
+				"name": "Thanhtuu",
+				"isLooping": false,
+				"isPingPong": false,
+				"repeatCount": 1,
+				"repeatTo": 0,
+				"speed": 5
+			},
+			{
+				"frames": [
+					{
+						"width": 1013,
+						"height": 480,
+						"originX": 0.5,
+						"originY": 0.5,
+						"originalSource": "",
+						"exportFormat": "lossless",
+						"exportQuality": 0.8,
+						"fileType": "image/png",
+						"imageSpriteId": 8292248,
+						"collisionPoly": {
+							"points": [
+								0.014807502467917079,
+								0.17291666666666666,
+								0.15004935834155972,
+								0.17291666666666666,
+								0.15004935834155972,
+								0.8875,
+								0.014807502467917079,
+								0.8875
+							]
+						},
+						"useCollisionPoly": true,
+						"duration": 1,
+						"tag": ""
+					}
+				],
+				"sid": 188638035713119,
+				"name": "Maquatang",
+				"isLooping": false,
+				"isPingPong": false,
+				"repeatCount": 1,
+				"repeatTo": 0,
+				"speed": 5
+			},
+			{
+				"frames": [
+					{
+						"width": 1013,
+						"height": 480,
+						"originX": 0.5,
+						"originY": 0.5,
+						"originalSource": "",
+						"exportFormat": "lossless",
+						"exportQuality": 0.8,
+						"fileType": "image/png",
+						"imageSpriteId": 4844312,
+						"collisionPoly": {
+							"points": [
+								0.014807502467917079,
+								0.17291666666666666,
+								0.15004935834155972,
+								0.17291666666666666,
+								0.15004935834155972,
+								0.8875,
+								0.014807502467917079,
+								0.8875
+							]
+						},
+						"useCollisionPoly": true,
+						"duration": 1,
+						"tag": ""
+					}
+				],
+				"sid": 216659555223645,
+				"name": "Caidat",
+				"isLooping": false,
+				"isPingPong": false,
+				"repeatCount": 1,
+				"repeatTo": 0,
+				"speed": 5
+			}
+		],
+		"subfolders": []
+	}
+}

@@ -1,0 +1,12 @@
+{
+	"name": "PlayerManager",
+	"plugin-id": "CV_PlayFabClient_PlayerManager",
+	"sid": 171010985843554,
+	"singleglobal-inst": {
+		"type": "PlayerManager",
+		"properties": {},
+		"uid": 8,
+		"sid": 271310153349841,
+		"tags": ""
+	}
+}

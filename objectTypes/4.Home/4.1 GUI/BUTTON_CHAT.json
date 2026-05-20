@@ -1,0 +1,9 @@
+{
+	"name": "BUTTON_CHAT",
+	"plugin-id": "Button",
+	"sid": 734743617113987,
+	"isGlobal": false,
+	"editorNewInstanceIsReplica": true,
+	"instanceVariables": [],
+	"behaviorTypes": []
+}

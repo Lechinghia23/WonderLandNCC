@@ -1,0 +1,12 @@
+{
+	"name": "Analytics",
+	"plugin-id": "CV_PlayFabClient_Analytics",
+	"sid": 113049850441529,
+	"singleglobal-inst": {
+		"type": "Analytics",
+		"properties": {},
+		"uid": 4,
+		"sid": 102079213945767,
+		"tags": ""
+	}
+}

@@ -1,0 +1,1885 @@
+{
+	"name": "2.Main Menu",
+	"events": [
+		{
+			"eventType": "variable",
+			"name": "NGONNGU",
+			"type": "number",
+			"initialValue": "0",
+			"comment": "",
+			"isStatic": false,
+			"isConstant": false,
+			"sid": 936718647306575
+		},
+		{
+			"eventType": "variable",
+			"name": "NHOMATKHAU",
+			"type": "number",
+			"initialValue": "1",
+			"comment": "",
+			"isStatic": false,
+			"isConstant": false,
+			"sid": 716877094580933
+		},
+		{
+			"eventType": "variable",
+			"name": "AMTHANHTROCHOI",
+			"type": "number",
+			"initialValue": "1",
+			"comment": "",
+			"isStatic": false,
+			"isConstant": false,
+			"sid": 525150859255889
+		},
+		{
+			"eventType": "variable",
+			"name": "NHACNEN",
+			"type": "number",
+			"initialValue": "1",
+			"comment": "",
+			"isStatic": false,
+			"isConstant": false,
+			"sid": 203790731777149
+		},
+		{
+			"eventType": "group",
+			"disabled": false,
+			"title": "0. KHOI TAO CHUNG_MAIN_MENU",
+			"description": "",
+			"isActiveOnStart": true,
+			"children": [
+				{
+					"eventType": "comment",
+					"text": "Khi Layout vừa được khởi tạo chúng ta sẽ ẨN TOÀN BỘ Viền và Nền của các Nút nhấn chung. Sau đó chúng ta sẽ tìm xem trong DỮ LIỆU CỤC BỘ có lưu trữ Key nào tên là NHOMATKHAU , AMTHANHTROCHOI hay NHACNEN hay không."
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "on-start-of-layout",
+							"objectClass": "System",
+							"sid": 215059440771651
+						}
+					],
+					"actions": [
+						{
+							"id": "set-css-style",
+							"objectClass": "NUT_NHAN",
+							"sid": 501845433033793,
+							"parameters": {
+								"property-name": "\"border\"",
+								"value": "\"none\""
+							}
+						},
+						{
+							"id": "set-css-style",
+							"objectClass": "NUT_NHAN",
+							"sid": 247340832840189,
+							"parameters": {
+								"property-name": "\"background\"",
+								"value": "\"none\""
+							}
+						},
+						{
+							"id": "get-item",
+							"objectClass": "LocalStorage",
+							"sid": 580135686105089,
+							"parameters": {
+								"key": "\"NHOMATKHAU\""
+							}
+						},
+						{
+							"id": "get-item",
+							"objectClass": "LocalStorage",
+							"sid": 654031578184089,
+							"parameters": {
+								"key": "\"AMTHANHTROCHOI\""
+							}
+						},
+						{
+							"id": "get-item",
+							"objectClass": "LocalStorage",
+							"sid": 952760220353607,
+							"parameters": {
+								"key": "\"NHACNEN\""
+							}
+						},
+						{
+							"id": "get-item",
+							"objectClass": "LocalStorage",
+							"sid": 290767841865856,
+							"parameters": {
+								"key": "\"Username\""
+							}
+						},
+						{
+							"id": "get-item",
+							"objectClass": "LocalStorage",
+							"sid": 175626479664844,
+							"parameters": {
+								"key": "\"Password\""
+							}
+						},
+						{
+							"id": "get-item",
+							"objectClass": "LocalStorage",
+							"sid": 919095345422731,
+							"parameters": {
+								"key": "\"Password2\""
+							}
+						}
+					],
+					"sid": 215496383845205
+				},
+				{
+					"eventType": "comment",
+					"text": "Sau khi lấy được dữ liệu của Key NHOMATKHAU thì sẽ set Global numbet NHOMATKHAU bằng với Value của Key NHOMATKHAU. Nếu không lấy được thì Global numbet NHOMATKHAU mặc định bằng 1. Sau đó là lấy các thông tin Username, Password và Set lên màn hình"
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "on-item-get",
+							"objectClass": "LocalStorage",
+							"sid": 676741688132041,
+							"parameters": {
+								"key": "\"NHOMATKHAU\""
+							}
+						}
+					],
+					"actions": [
+						{
+							"id": "set-eventvar-value",
+							"objectClass": "System",
+							"sid": 305824171719279,
+							"parameters": {
+								"variable": "NHOMATKHAU",
+								"value": "LocalStorage.ItemValue"
+							}
+						}
+					],
+					"sid": 691516108068874,
+					"children": [
+						{
+							"eventType": "block",
+							"conditions": [
+								{
+									"id": "compare-two-values",
+									"objectClass": "System",
+									"sid": 371835922515119,
+									"parameters": {
+										"first-value": "NHOMATKHAU",
+										"comparison": 0,
+										"second-value": "0"
+									}
+								}
+							],
+							"actions": [
+								{
+									"id": "set-animation",
+									"objectClass": "MainMenu",
+									"sid": 732003932939220,
+									"parameters": {
+										"animation": "\"2. Login Pass\"",
+										"from": "beginning"
+									}
+								},
+								{
+									"id": "set-layer-visible",
+									"objectClass": "System",
+									"sid": 785150486228482,
+									"parameters": {
+										"layer": "\"2. Login Pass\"",
+										"visibility": "visible"
+									}
+								}
+							],
+							"sid": 443747427811939
+						},
+						{
+							"eventType": "block",
+							"conditions": [
+								{
+									"id": "compare-two-values",
+									"objectClass": "System",
+									"sid": 444909821708229,
+									"parameters": {
+										"first-value": "NHOMATKHAU",
+										"comparison": 0,
+										"second-value": "1"
+									}
+								}
+							],
+							"actions": [
+								{
+									"id": "set-animation",
+									"objectClass": "MainMenu",
+									"sid": 251094620533282,
+									"parameters": {
+										"animation": "\"2. Login\"",
+										"from": "beginning"
+									}
+								},
+								{
+									"id": "set-layer-visible",
+									"objectClass": "System",
+									"sid": 290404291565972,
+									"parameters": {
+										"layer": "\"2. Login\"",
+										"visibility": "visible"
+									}
+								}
+							],
+							"sid": 305236635991137
+						}
+					]
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "on-item-get",
+							"objectClass": "LocalStorage",
+							"sid": 933915953643165,
+							"parameters": {
+								"key": "\"Username\""
+							}
+						}
+					],
+					"actions": [
+						{
+							"id": "set-text",
+							"objectClass": "Username_Login",
+							"sid": 512693670674295,
+							"parameters": {
+								"text": "LocalStorage.ItemValue"
+							}
+						}
+					],
+					"sid": 600781200990071
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "on-item-get",
+							"objectClass": "LocalStorage",
+							"sid": 242753451141478,
+							"parameters": {
+								"key": "\"Password\""
+							}
+						}
+					],
+					"actions": [
+						{
+							"id": "set-text",
+							"objectClass": "Username_Login",
+							"sid": 423292161796985,
+							"parameters": {
+								"text": "LocalStorage.ItemValue"
+							}
+						}
+					],
+					"sid": 216634708291923
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "on-item-get",
+							"objectClass": "LocalStorage",
+							"sid": 794771454007559,
+							"parameters": {
+								"key": "\"Password2\""
+							}
+						}
+					],
+					"actions": [
+						{
+							"id": "set-text",
+							"objectClass": "Username_Login",
+							"sid": 897320700290523,
+							"parameters": {
+								"text": "LocalStorage.ItemValue"
+							}
+						}
+					],
+					"sid": 228985382494868
+				},
+				{
+					"eventType": "comment",
+					"text": "Khi ấn vào Nút nhấn Layer chung Main Menu -> Ta lần lượt ẩn Layer Login đến Layer Noti. Sau đó sẽ HIỂN THỊ Layer dựa theo BIẾN \"ROLE\" và Thay đổi Animation (Hình ảnh) của Khung Main Menu theo BIẾN \"ROLE\" của Nút nhấn."
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "on-clicked",
+							"objectClass": "BUTTON_LAYER_MAINMENU",
+							"sid": 218232951887107
+						}
+					],
+					"actions": [],
+					"sid": 281690994368977,
+					"children": [
+						{
+							"eventType": "block",
+							"conditions": [
+								{
+									"id": "compare-two-values",
+									"objectClass": "System",
+									"sid": 881819169326763,
+									"parameters": {
+										"first-value": "NHOMATKHAU",
+										"comparison": 0,
+										"second-value": "0"
+									}
+								}
+							],
+							"actions": [
+								{
+									"id": "set-layer-visible",
+									"objectClass": "System",
+									"sid": 507791783198005,
+									"parameters": {
+										"layer": "1",
+										"visibility": "invisible"
+									}
+								},
+								{
+									"id": "set-layer-visible",
+									"objectClass": "System",
+									"sid": 358589304056106,
+									"parameters": {
+										"layer": "2",
+										"visibility": "invisible"
+									}
+								},
+								{
+									"id": "set-layer-visible",
+									"objectClass": "System",
+									"sid": 145257730204469,
+									"parameters": {
+										"layer": "3",
+										"visibility": "invisible"
+									}
+								},
+								{
+									"id": "set-layer-visible",
+									"objectClass": "System",
+									"sid": 931630902190671,
+									"parameters": {
+										"layer": "4",
+										"visibility": "invisible"
+									}
+								},
+								{
+									"id": "set-layer-visible",
+									"objectClass": "System",
+									"sid": 259054637982878,
+									"parameters": {
+										"layer": "5",
+										"visibility": "invisible"
+									}
+								},
+								{
+									"id": "set-layer-visible",
+									"objectClass": "System",
+									"sid": 735204334052560,
+									"parameters": {
+										"layer": "6",
+										"visibility": "invisible"
+									}
+								},
+								{
+									"id": "set-layer-visible",
+									"objectClass": "System",
+									"sid": 686275398239005,
+									"parameters": {
+										"layer": "7",
+										"visibility": "invisible"
+									}
+								},
+								{
+									"id": "set-layer-visible",
+									"objectClass": "System",
+									"sid": 372407641224976,
+									"parameters": {
+										"layer": "BUTTON_LAYER_MAINMENU . ROLE_II",
+										"visibility": "visible"
+									}
+								},
+								{
+									"id": "set-animation",
+									"objectClass": "MainMenu",
+									"sid": 315548297158008,
+									"parameters": {
+										"animation": "BUTTON_LAYER_MAINMENU.ROLE_II",
+										"from": "beginning"
+									}
+								}
+							],
+							"sid": 538803384616786
+						},
+						{
+							"eventType": "block",
+							"conditions": [
+								{
+									"id": "compare-two-values",
+									"objectClass": "System",
+									"sid": 397290953316887,
+									"parameters": {
+										"first-value": "NHOMATKHAU",
+										"comparison": 0,
+										"second-value": "1"
+									}
+								}
+							],
+							"actions": [
+								{
+									"id": "set-layer-visible",
+									"objectClass": "System",
+									"sid": 922442933838789,
+									"parameters": {
+										"layer": "1",
+										"visibility": "invisible"
+									}
+								},
+								{
+									"id": "set-layer-visible",
+									"objectClass": "System",
+									"sid": 246139022285705,
+									"parameters": {
+										"layer": "2",
+										"visibility": "invisible"
+									}
+								},
+								{
+									"id": "set-layer-visible",
+									"objectClass": "System",
+									"sid": 843573785074115,
+									"parameters": {
+										"layer": "3",
+										"visibility": "invisible"
+									}
+								},
+								{
+									"id": "set-layer-visible",
+									"objectClass": "System",
+									"sid": 656215229162139,
+									"parameters": {
+										"layer": "4",
+										"visibility": "invisible"
+									}
+								},
+								{
+									"id": "set-layer-visible",
+									"objectClass": "System",
+									"sid": 786183000477454,
+									"parameters": {
+										"layer": "5",
+										"visibility": "invisible"
+									}
+								},
+								{
+									"id": "set-layer-visible",
+									"objectClass": "System",
+									"sid": 571881065293630,
+									"parameters": {
+										"layer": "6",
+										"visibility": "invisible"
+									}
+								},
+								{
+									"id": "set-layer-visible",
+									"objectClass": "System",
+									"sid": 639885028382916,
+									"parameters": {
+										"layer": "7",
+										"visibility": "invisible"
+									}
+								},
+								{
+									"id": "set-layer-visible",
+									"objectClass": "System",
+									"sid": 808248196493701,
+									"parameters": {
+										"layer": "BUTTON_LAYER_MAINMENU . ROLE",
+										"visibility": "visible"
+									}
+								},
+								{
+									"id": "set-animation",
+									"objectClass": "MainMenu",
+									"sid": 556872030500685,
+									"parameters": {
+										"animation": "BUTTON_LAYER_MAINMENU.ROLE",
+										"from": "beginning"
+									}
+								}
+							],
+							"sid": 372220684291646
+						}
+					]
+				},
+				{
+					"eventType": "comment",
+					"text": "Nếu nhấn nút GHI NHỚ MẬT KHẨU thì sẽ tự động lưu cục bộ lại phần ghi nhớ mật khẩu cho người dùng với biến số là 0. Còn nếu nhấn nút LOGIN bình thường thì sẽ tự động lưu cục bộ lại KHÔNG GHI NHỚ MẬT KHẨU với biến số là 1."
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "on-clicked",
+							"objectClass": "Button_Nho_MK",
+							"sid": 312313681424244
+						}
+					],
+					"actions": [],
+					"sid": 627519908137034,
+					"children": [
+						{
+							"eventType": "block",
+							"conditions": [
+								{
+									"id": "compare-two-values",
+									"objectClass": "System",
+									"sid": 625336805183735,
+									"parameters": {
+										"first-value": "NHOMATKHAU",
+										"comparison": 0,
+										"second-value": "1"
+									}
+								}
+							],
+							"actions": [
+								{
+									"id": "set-eventvar-value",
+									"objectClass": "System",
+									"sid": 669944325418982,
+									"parameters": {
+										"variable": "NHOMATKHAU",
+										"value": "0"
+									}
+								},
+								{
+									"id": "set-item",
+									"objectClass": "LocalStorage",
+									"sid": 332535977478688,
+									"parameters": {
+										"key": "\"NHOMATKHAU\"",
+										"value": "0"
+									}
+								},
+								{
+									"id": "set-animation",
+									"objectClass": "MainMenu",
+									"sid": 204123856858225,
+									"parameters": {
+										"animation": "\"2. Login Pass\"",
+										"from": "beginning"
+									}
+								}
+							],
+							"sid": 387004383527571
+						},
+						{
+							"eventType": "block",
+							"conditions": [
+								{
+									"id": "else",
+									"objectClass": "System",
+									"sid": 639721185164762
+								}
+							],
+							"actions": [
+								{
+									"id": "set-eventvar-value",
+									"objectClass": "System",
+									"sid": 239755812179382,
+									"parameters": {
+										"variable": "NHOMATKHAU",
+										"value": "1"
+									}
+								},
+								{
+									"id": "set-item",
+									"objectClass": "LocalStorage",
+									"sid": 377149396011352,
+									"parameters": {
+										"key": "\"NHOMATKHAU\"",
+										"value": "1"
+									}
+								},
+								{
+									"id": "set-animation",
+									"objectClass": "MainMenu",
+									"sid": 811278185134766,
+									"parameters": {
+										"animation": "\"2. Login\"",
+										"from": "beginning"
+									}
+								}
+							],
+							"sid": 893583350285158
+						}
+					]
+				}
+			],
+			"sid": 887484014138042
+		},
+		{
+			"eventType": "group",
+			"disabled": false,
+			"title": "1. LOGIN MAIN MENU",
+			"description": "",
+			"isActiveOnStart": true,
+			"children": [
+				{
+					"eventType": "group",
+					"disabled": false,
+					"title": "1.1 LẶP LẠI MỞ KHUNG NHẬP ẢO",
+					"description": "Lặp đi lặp lại vấn đề mở khung nhập ảo và lấy dữ liệu nhập ảo",
+					"isActiveOnStart": true,
+					"children": [
+						{
+							"eventType": "comment",
+							"text": "Khi ấn vào nút Button Nhap Username thì sẽ Set vị trí của nút ấn Nhập Username vào màn hình. Sau đó sẽ hiển thị Layer Nhap Ao."
+						},
+						{
+							"eventType": "block",
+							"conditions": [
+								{
+									"id": "on-clicked",
+									"objectClass": "Button_Nhap_Username_Login",
+									"sid": 229687741610360
+								}
+							],
+							"actions": [
+								{
+									"id": "set-position",
+									"objectClass": "Username_NhapAo_Login",
+									"sid": 354753719495896,
+									"parameters": {
+										"x": "800",
+										"y": "0"
+									}
+								},
+								{
+									"id": "set-layer-visible",
+									"objectClass": "System",
+									"sid": 225047345390386,
+									"parameters": {
+										"layer": "\"7. Nhap Ao\"",
+										"visibility": "visible"
+									}
+								}
+							],
+							"sid": 161955771903365
+						},
+						{
+							"eventType": "comment",
+							"text": "Sau khi ấn nút Button Nhap Username thì sẽ Set vị trí của nút nhấn Nhập Username ra khỏi màn hình. Sau đó sẽ Set Text Username bằng với giá trị Văn bản trên KHUNG NHAP AO CHUNG"
+						},
+						{
+							"eventType": "block",
+							"conditions": [
+								{
+									"id": "on-clicked",
+									"objectClass": "Username_NhapAo_Login",
+									"sid": 451763078816752
+								}
+							],
+							"actions": [
+								{
+									"id": "set-position",
+									"objectClass": "Username_NhapAo_Login",
+									"sid": 872667114197906,
+									"parameters": {
+										"x": "9999",
+										"y": "9999"
+									}
+								},
+								{
+									"id": "set-text",
+									"objectClass": "Username_Login",
+									"sid": 535594286828602,
+									"parameters": {
+										"text": "KHUNGNHAPAOCHUNG.Text"
+									}
+								},
+								{
+									"id": "set-layer-visible",
+									"objectClass": "System",
+									"sid": 599813698352258,
+									"parameters": {
+										"layer": "\"7. Nhap Ao\"",
+										"visibility": "invisible"
+									}
+								},
+								{
+									"id": "set-text",
+									"objectClass": "KHUNGNHAPAOCHUNG",
+									"sid": 514577904482494,
+									"parameters": {
+										"text": "\"\""
+									}
+								}
+							],
+							"sid": 830893994256673
+						},
+						{
+							"eventType": "comment",
+							"text": "Khi ấn vào nút Button Nhap Password thì sẽ Set vị trí của nút ấn Nhập Password vào màn hình. Sau đó sẽ hiển thị Layer Nhap Ao."
+						},
+						{
+							"eventType": "block",
+							"conditions": [
+								{
+									"id": "on-clicked",
+									"objectClass": "Button_Nhap_Password_Login",
+									"sid": 159318717605977
+								}
+							],
+							"actions": [
+								{
+									"id": "set-position",
+									"objectClass": "Password_NhapAo_Login",
+									"sid": 771402640178355,
+									"parameters": {
+										"x": "800",
+										"y": "0"
+									}
+								},
+								{
+									"id": "set-layer-visible",
+									"objectClass": "System",
+									"sid": 256017844353930,
+									"parameters": {
+										"layer": "\"7. Nhap Ao\"",
+										"visibility": "visible"
+									}
+								}
+							],
+							"sid": 723568174746594
+						},
+						{
+							"eventType": "comment",
+							"text": " Sau khi ấn nút Button Nhap Password thì sẽ Set vị trí của nút nhấn Nhập Password ra khỏi màn hình. Sau đó sẽ Set Text Password bằng với giá trị Văn bản trên KHUNG NHAP AO CHUNG. Với Password 2 là Text ảo mặc định là 9 dấu *"
+						},
+						{
+							"eventType": "block",
+							"conditions": [
+								{
+									"id": "on-clicked",
+									"objectClass": "Password_NhapAo_Login",
+									"sid": 192376217329987
+								}
+							],
+							"actions": [
+								{
+									"id": "set-position",
+									"objectClass": "Password_NhapAo_Login",
+									"sid": 930318029699909,
+									"parameters": {
+										"x": "9999",
+										"y": "9999"
+									}
+								},
+								{
+									"id": "set-text",
+									"objectClass": "Password_Login",
+									"sid": 938961317915200,
+									"parameters": {
+										"text": "KHUNGNHAPAOCHUNG.Text"
+									}
+								},
+								{
+									"id": "set-text",
+									"objectClass": "Password_Login2",
+									"sid": 715018470289372,
+									"parameters": {
+										"text": "\"*********\""
+									}
+								},
+								{
+									"id": "set-layer-visible",
+									"objectClass": "System",
+									"sid": 276671179340899,
+									"parameters": {
+										"layer": "\"7. Nhap Ao\"",
+										"visibility": "invisible"
+									}
+								},
+								{
+									"id": "set-text",
+									"objectClass": "KHUNGNHAPAOCHUNG",
+									"sid": 865252690456359,
+									"parameters": {
+										"text": "\"\""
+									}
+								}
+							],
+							"sid": 398819358009427
+						}
+					],
+					"sid": 476219053804969
+				},
+				{
+					"eventType": "group",
+					"disabled": false,
+					"title": "1.2 ĐĂNG NHẬP TÀI KHOẢN",
+					"description": "",
+					"isActiveOnStart": true,
+					"children": [
+						{
+							"eventType": "comment",
+							"text": "Khi ấn nút BUTTON LOGIN thì sẽ đăng nhập vào tài khoản với USERNAME và PASSWORD"
+						},
+						{
+							"eventType": "block",
+							"conditions": [
+								{
+									"id": "on-clicked",
+									"objectClass": "BUTTON_LOGIN_MAINMENU",
+									"sid": 751034472644660
+								}
+							],
+							"actions": [
+								{
+									"id": "companylogin5",
+									"objectClass": "Authentication",
+									"sid": 415208632046336,
+									"parameters": {
+										"key_:0": "Username_Login.Text",
+										"password_:1": "Password_Login.Text",
+										"method_:4": "username"
+									}
+								}
+							],
+							"sid": 792313445223515,
+							"children": [
+								{
+									"eventType": "block",
+									"conditions": [
+										{
+											"id": "compare-two-values",
+											"objectClass": "System",
+											"sid": 128304431154996,
+											"parameters": {
+												"first-value": "NHOMATKHAU",
+												"comparison": 0,
+												"second-value": "0"
+											}
+										}
+									],
+									"actions": [
+										{
+											"id": "set-item",
+											"objectClass": "LocalStorage",
+											"sid": 239127176715896,
+											"parameters": {
+												"key": "\"Username\"",
+												"value": "Username_Login.Text"
+											}
+										},
+										{
+											"id": "set-item",
+											"objectClass": "LocalStorage",
+											"sid": 208520872381122,
+											"parameters": {
+												"key": "\"Password\"",
+												"value": "Password_Login.Text"
+											}
+										},
+										{
+											"id": "set-item",
+											"objectClass": "LocalStorage",
+											"sid": 385184809577409,
+											"parameters": {
+												"key": "\"Password2\"",
+												"value": "\"*********\""
+											}
+										}
+									],
+									"sid": 689799244788833
+								},
+								{
+									"eventType": "block",
+									"conditions": [
+										{
+											"id": "else",
+											"objectClass": "System",
+											"sid": 216648773468494
+										}
+									],
+									"actions": [
+										{
+											"id": "set-item",
+											"objectClass": "LocalStorage",
+											"sid": 673671271059363,
+											"parameters": {
+												"key": "\"Username\"",
+												"value": "\"\""
+											}
+										},
+										{
+											"id": "set-item",
+											"objectClass": "LocalStorage",
+											"sid": 859388011959636,
+											"parameters": {
+												"key": "\"Password\"",
+												"value": "\"\""
+											}
+										},
+										{
+											"id": "set-item",
+											"objectClass": "LocalStorage",
+											"sid": 413951235276304,
+											"parameters": {
+												"key": "\"Password2\"",
+												"value": "\"\""
+											}
+										}
+									],
+									"sid": 113567521763693
+								}
+							]
+						},
+						{
+							"eventType": "comment",
+							"text": "Đăng nhập thành công"
+						},
+						{
+							"eventType": "block",
+							"conditions": [
+								{
+									"id": "company_usernamelogin19",
+									"objectClass": "Authentication",
+									"sid": 578435802110710
+								}
+							],
+							"actions": [
+								{
+									"id": "getglobalThisaccountinfo1",
+									"objectClass": "AccountInfo",
+									"sid": 842693457742235,
+									"parameters": {
+										"tag_:0": "\"\""
+									}
+								},
+								{
+									"id": "getalluserdata2",
+									"objectClass": "UserData",
+									"sid": 598188290971683,
+									"parameters": {
+										"tag": "\"\""
+									}
+								},
+								{
+									"id": "getuserinventory2",
+									"objectClass": "VirtualCurrencies",
+									"sid": 298130784029623,
+									"parameters": {
+										"tag": "\"\""
+									}
+								},
+								{
+									"id": "go-to-layout",
+									"objectClass": "System",
+									"sid": 500413165828122,
+									"parameters": {
+										"layout": "3.Loading"
+									}
+								}
+							],
+							"sid": 178805220144280
+						},
+						{
+							"eventType": "comment",
+							"text": "Đăng nhập thất bại"
+						},
+						{
+							"eventType": "block",
+							"conditions": [
+								{
+									"id": "company_usernamelogin_error22",
+									"objectClass": "Authentication",
+									"sid": 950213229984654
+								}
+							],
+							"actions": [
+								{
+									"id": "set-layer-visible",
+									"objectClass": "System",
+									"sid": 620405393757906,
+									"parameters": {
+										"layer": "\"8. Bao loi\"",
+										"visibility": "visible"
+									}
+								}
+							],
+							"sid": 453221852676204
+						}
+					],
+					"sid": 173451466060525
+				}
+			],
+			"sid": 515696263134909
+		},
+		{
+			"eventType": "group",
+			"disabled": false,
+			"title": "2. REGISTER MAIN MENU",
+			"description": "",
+			"isActiveOnStart": true,
+			"children": [
+				{
+					"eventType": "group",
+					"disabled": false,
+					"title": "2.1 LẶP LẠI MỞ KHUNG NHẬP ẢO",
+					"description": "Lặp đi lặp lại vấn đề mở Khung Nhập Ảo và Lấy dữ liệu nhập ảo",
+					"isActiveOnStart": true,
+					"children": [
+						{
+							"eventType": "block",
+							"conditions": [
+								{
+									"id": "on-clicked",
+									"objectClass": "Button_Nhap_Username_Register",
+									"sid": 797191990147062
+								}
+							],
+							"actions": [
+								{
+									"id": "set-position",
+									"objectClass": "Usename_NhapAo_Register",
+									"sid": 748545928327640,
+									"parameters": {
+										"x": "800",
+										"y": "0"
+									}
+								},
+								{
+									"id": "set-layer-visible",
+									"objectClass": "System",
+									"sid": 130160913852754,
+									"parameters": {
+										"layer": "\"7. Nhap Ao\"",
+										"visibility": "visible"
+									}
+								}
+							],
+							"sid": 778935000551899
+						},
+						{
+							"eventType": "block",
+							"conditions": [
+								{
+									"id": "on-clicked",
+									"objectClass": "Usename_NhapAo_Register",
+									"sid": 330329858409436
+								}
+							],
+							"actions": [
+								{
+									"id": "set-position",
+									"objectClass": "Usename_NhapAo_Register",
+									"sid": 771174751240037,
+									"parameters": {
+										"x": "9999",
+										"y": "9999"
+									}
+								},
+								{
+									"id": "set-text",
+									"objectClass": "Username_Register",
+									"sid": 785916234128635,
+									"parameters": {
+										"text": "KHUNGNHAPAOCHUNG.Text"
+									}
+								},
+								{
+									"id": "set-layer-visible",
+									"objectClass": "System",
+									"sid": 521439493010052,
+									"parameters": {
+										"layer": "\"7. Nhap Ao\"",
+										"visibility": "invisible"
+									}
+								},
+								{
+									"id": "set-text",
+									"objectClass": "KHUNGNHAPAOCHUNG",
+									"sid": 614244351070692,
+									"parameters": {
+										"text": "\"\""
+									}
+								}
+							],
+							"sid": 885089617239345
+						},
+						{
+							"eventType": "block",
+							"conditions": [
+								{
+									"id": "on-clicked",
+									"objectClass": "Button_Nhap_DisplayName_Register",
+									"sid": 529413118990150
+								}
+							],
+							"actions": [
+								{
+									"id": "set-position",
+									"objectClass": "DisplayName_NhapAo_Register",
+									"sid": 329181841485358,
+									"parameters": {
+										"x": "800",
+										"y": "0"
+									}
+								},
+								{
+									"id": "set-layer-visible",
+									"objectClass": "System",
+									"sid": 951067386495291,
+									"parameters": {
+										"layer": "\"7. Nhap Ao\"",
+										"visibility": "visible"
+									}
+								}
+							],
+							"sid": 449806328016001
+						},
+						{
+							"eventType": "block",
+							"conditions": [
+								{
+									"id": "on-clicked",
+									"objectClass": "DisplayName_NhapAo_Register",
+									"sid": 995387428841580
+								}
+							],
+							"actions": [
+								{
+									"id": "set-position",
+									"objectClass": "DisplayName_NhapAo_Register",
+									"sid": 569609401417757,
+									"parameters": {
+										"x": "9999",
+										"y": "9999"
+									}
+								},
+								{
+									"id": "set-text",
+									"objectClass": "DisplayName_Register",
+									"sid": 171954144023884,
+									"parameters": {
+										"text": "KHUNGNHAPAOCHUNG.Text"
+									}
+								},
+								{
+									"id": "set-layer-visible",
+									"objectClass": "System",
+									"sid": 894065219814056,
+									"parameters": {
+										"layer": "\"7. Nhap Ao\"",
+										"visibility": "invisible"
+									}
+								},
+								{
+									"id": "set-text",
+									"objectClass": "KHUNGNHAPAOCHUNG",
+									"sid": 948124534615596,
+									"parameters": {
+										"text": "\"\""
+									}
+								}
+							],
+							"sid": 132971181462631
+						},
+						{
+							"eventType": "block",
+							"conditions": [
+								{
+									"id": "on-clicked",
+									"objectClass": "Button_Nhap_Email_Register",
+									"sid": 475959361119376
+								}
+							],
+							"actions": [
+								{
+									"id": "set-position",
+									"objectClass": "Email_NhapAo_Register",
+									"sid": 282363868494571,
+									"parameters": {
+										"x": "800",
+										"y": "0"
+									}
+								},
+								{
+									"id": "set-layer-visible",
+									"objectClass": "System",
+									"sid": 165288866298962,
+									"parameters": {
+										"layer": "\"7. Nhap Ao\"",
+										"visibility": "visible"
+									}
+								}
+							],
+							"sid": 828925150369171
+						},
+						{
+							"eventType": "block",
+							"conditions": [
+								{
+									"id": "on-clicked",
+									"objectClass": "Email_NhapAo_Register",
+									"sid": 606171732569453
+								}
+							],
+							"actions": [
+								{
+									"id": "set-position",
+									"objectClass": "Email_NhapAo_Register",
+									"sid": 989642654539392,
+									"parameters": {
+										"x": "9999",
+										"y": "9999"
+									}
+								},
+								{
+									"id": "set-text",
+									"objectClass": "Email_Register",
+									"sid": 349813837523058,
+									"parameters": {
+										"text": "KHUNGNHAPAOCHUNG.Text"
+									}
+								},
+								{
+									"id": "set-layer-visible",
+									"objectClass": "System",
+									"sid": 148843238321489,
+									"parameters": {
+										"layer": "\"7. Nhap Ao\"",
+										"visibility": "invisible"
+									}
+								},
+								{
+									"id": "set-text",
+									"objectClass": "KHUNGNHAPAOCHUNG",
+									"sid": 293405472814631,
+									"parameters": {
+										"text": "\"\""
+									}
+								}
+							],
+							"sid": 399216348693310
+						},
+						{
+							"eventType": "block",
+							"conditions": [
+								{
+									"id": "on-clicked",
+									"objectClass": "Button_Nhap_Password_Register",
+									"sid": 821585594316896
+								}
+							],
+							"actions": [
+								{
+									"id": "set-position",
+									"objectClass": "Password_NhapAo_Register",
+									"sid": 174338537411312,
+									"parameters": {
+										"x": "800",
+										"y": "0"
+									}
+								},
+								{
+									"id": "set-layer-visible",
+									"objectClass": "System",
+									"sid": 565128685366690,
+									"parameters": {
+										"layer": "\"7. Nhap Ao\"",
+										"visibility": "visible"
+									}
+								}
+							],
+							"sid": 386056714431810
+						},
+						{
+							"eventType": "block",
+							"conditions": [
+								{
+									"id": "on-clicked",
+									"objectClass": "Password_NhapAo_Register",
+									"sid": 381362379976409
+								}
+							],
+							"actions": [
+								{
+									"id": "set-position",
+									"objectClass": "Password_NhapAo_Register",
+									"sid": 918965142859302,
+									"parameters": {
+										"x": "9999",
+										"y": "9999"
+									}
+								},
+								{
+									"id": "set-text",
+									"objectClass": "Password_Register",
+									"sid": 770341945027467,
+									"parameters": {
+										"text": "KHUNGNHAPAOCHUNG.Text"
+									}
+								},
+								{
+									"id": "set-layer-visible",
+									"objectClass": "System",
+									"sid": 230554535338473,
+									"parameters": {
+										"layer": "\"7. Nhap Ao\"",
+										"visibility": "invisible"
+									}
+								},
+								{
+									"id": "set-text",
+									"objectClass": "KHUNGNHAPAOCHUNG",
+									"sid": 963144460697525,
+									"parameters": {
+										"text": "\"\""
+									}
+								}
+							],
+							"sid": 953255330423295
+						}
+					],
+					"sid": 522801152904589
+				},
+				{
+					"eventType": "group",
+					"disabled": false,
+					"title": "2.2 ĐĂNG KÍ TÀI KHOẢN",
+					"description": "",
+					"isActiveOnStart": true,
+					"children": [
+						{
+							"eventType": "comment",
+							"text": "Đăng kí tài khoản thành công"
+						},
+						{
+							"eventType": "block",
+							"conditions": [
+								{
+									"id": "company_register23",
+									"objectClass": "Authentication",
+									"sid": 599902444584320
+								}
+							],
+							"actions": [],
+							"sid": 961746786503507
+						},
+						{
+							"eventType": "variable",
+							"name": "BAOLOIDANGKI",
+							"type": "number",
+							"initialValue": "0",
+							"comment": "",
+							"isStatic": false,
+							"isConstant": false,
+							"sid": 930378848318625
+						},
+						{
+							"eventType": "block",
+							"conditions": [
+								{
+									"id": "on-clicked",
+									"objectClass": "BUTTON_REGISTER_MAINMENU",
+									"sid": 951941473422376
+								}
+							],
+							"actions": [
+								{
+									"id": "set-eventvar-value",
+									"objectClass": "System",
+									"sid": 791486926305591,
+									"parameters": {
+										"variable": "BAOLOIDANGKI",
+										"value": "0"
+									}
+								}
+							],
+							"sid": 951233281459057,
+							"children": [
+								{
+									"eventType": "block",
+									"conditions": [
+										{
+											"id": "compare-two-values",
+											"objectClass": "System",
+											"sid": 925859469711537,
+											"parameters": {
+												"first-value": "find(Username_Register.Text,\" \")",
+												"comparison": 1,
+												"second-value": "-1"
+											}
+										}
+									],
+									"actions": [
+										{
+											"id": "set-layer-visible",
+											"objectClass": "System",
+											"sid": 331208042206327,
+											"parameters": {
+												"layer": "\"8. Bao loi\"",
+												"visibility": "visible"
+											}
+										},
+										{
+											"id": "set-eventvar-value",
+											"objectClass": "System",
+											"sid": 268693930065003,
+											"parameters": {
+												"variable": "BAOLOIDANGKI",
+												"value": "1"
+											}
+										}
+									],
+									"sid": 643912837671746
+								},
+								{
+									"eventType": "block",
+									"conditions": [
+										{
+											"id": "compare-two-values",
+											"objectClass": "System",
+											"sid": 500794623309916,
+											"parameters": {
+												"first-value": "len(Username_Register.Text)",
+												"comparison": 2,
+												"second-value": "6"
+											}
+										}
+									],
+									"actions": [
+										{
+											"id": "set-layer-visible",
+											"objectClass": "System",
+											"sid": 759075266537225,
+											"parameters": {
+												"layer": "\"8. Bao loi\"",
+												"visibility": "visible"
+											}
+										},
+										{
+											"id": "set-eventvar-value",
+											"objectClass": "System",
+											"sid": 687170644537535,
+											"parameters": {
+												"variable": "BAOLOIDANGKI",
+												"value": "1"
+											}
+										}
+									],
+									"sid": 955282539743548
+								},
+								{
+									"eventType": "block",
+									"conditions": [
+										{
+											"id": "compare-two-values",
+											"objectClass": "System",
+											"sid": 795260394094894,
+											"parameters": {
+												"first-value": "len(Username_Register.Text)",
+												"comparison": 4,
+												"second-value": "12"
+											}
+										}
+									],
+									"actions": [
+										{
+											"id": "set-layer-visible",
+											"objectClass": "System",
+											"sid": 554662104265873,
+											"parameters": {
+												"layer": "\"8. Bao loi\"",
+												"visibility": "visible"
+											}
+										},
+										{
+											"id": "set-eventvar-value",
+											"objectClass": "System",
+											"sid": 594075079519458,
+											"parameters": {
+												"variable": "BAOLOIDANGKI",
+												"value": "1"
+											}
+										}
+									],
+									"sid": 217728950831203
+								},
+								{
+									"eventType": "block",
+									"conditions": [
+										{
+											"id": "compare-two-values",
+											"objectClass": "System",
+											"sid": 363729560367691,
+											"parameters": {
+												"first-value": "find(DisplayName_Register.Text,\" \")",
+												"comparison": 1,
+												"second-value": "-1"
+											}
+										}
+									],
+									"actions": [
+										{
+											"id": "set-layer-visible",
+											"objectClass": "System",
+											"sid": 357704795222984,
+											"parameters": {
+												"layer": "\"8. Bao loi\"",
+												"visibility": "visible"
+											}
+										},
+										{
+											"id": "set-eventvar-value",
+											"objectClass": "System",
+											"sid": 426578141668816,
+											"parameters": {
+												"variable": "BAOLOIDANGKI",
+												"value": "1"
+											}
+										}
+									],
+									"sid": 692825909736770
+								},
+								{
+									"eventType": "block",
+									"conditions": [
+										{
+											"id": "compare-two-values",
+											"objectClass": "System",
+											"sid": 409964597878524,
+											"parameters": {
+												"first-value": "len(DisplayName_Register.Text)",
+												"comparison": 2,
+												"second-value": "6"
+											}
+										}
+									],
+									"actions": [
+										{
+											"id": "set-layer-visible",
+											"objectClass": "System",
+											"sid": 807559847559243,
+											"parameters": {
+												"layer": "\"8. Bao loi\"",
+												"visibility": "visible"
+											}
+										},
+										{
+											"id": "set-eventvar-value",
+											"objectClass": "System",
+											"sid": 892726886086032,
+											"parameters": {
+												"variable": "BAOLOIDANGKI",
+												"value": "1"
+											}
+										}
+									],
+									"sid": 542258483012837
+								},
+								{
+									"eventType": "block",
+									"conditions": [
+										{
+											"id": "compare-two-values",
+											"objectClass": "System",
+											"sid": 810825166334892,
+											"parameters": {
+												"first-value": "len(DisplayName_Register.Text)",
+												"comparison": 4,
+												"second-value": "12"
+											}
+										}
+									],
+									"actions": [
+										{
+											"id": "set-layer-visible",
+											"objectClass": "System",
+											"sid": 289201525523475,
+											"parameters": {
+												"layer": "\"8. Bao loi\"",
+												"visibility": "visible"
+											}
+										},
+										{
+											"id": "set-eventvar-value",
+											"objectClass": "System",
+											"sid": 489846764182630,
+											"parameters": {
+												"variable": "BAOLOIDANGKI",
+												"value": "1"
+											}
+										}
+									],
+									"sid": 220204293859003
+								},
+								{
+									"eventType": "block",
+									"conditions": [
+										{
+											"id": "compare-two-values",
+											"objectClass": "System",
+											"sid": 914852965604374,
+											"parameters": {
+												"first-value": "find(Email_Register.Text,\" \")",
+												"comparison": 1,
+												"second-value": "-1"
+											}
+										}
+									],
+									"actions": [
+										{
+											"id": "set-layer-visible",
+											"objectClass": "System",
+											"sid": 677747812377246,
+											"parameters": {
+												"layer": "\"8. Bao loi\"",
+												"visibility": "visible"
+											}
+										},
+										{
+											"id": "set-eventvar-value",
+											"objectClass": "System",
+											"sid": 583246166212559,
+											"parameters": {
+												"variable": "BAOLOIDANGKI",
+												"value": "1"
+											}
+										}
+									],
+									"sid": 284510897262376
+								},
+								{
+									"eventType": "block",
+									"conditions": [
+										{
+											"id": "compare-two-values",
+											"objectClass": "System",
+											"sid": 844667428914691,
+											"parameters": {
+												"first-value": "find(Email_Register.Text,\"@gmail.com\")",
+												"comparison": 0,
+												"second-value": "-1"
+											}
+										}
+									],
+									"actions": [
+										{
+											"id": "set-layer-visible",
+											"objectClass": "System",
+											"sid": 489600123388632,
+											"parameters": {
+												"layer": "\"8. Bao loi\"",
+												"visibility": "visible"
+											}
+										},
+										{
+											"id": "set-eventvar-value",
+											"objectClass": "System",
+											"sid": 196232059836488,
+											"parameters": {
+												"variable": "BAOLOIDANGKI",
+												"value": "1"
+											}
+										}
+									],
+									"sid": 250230175391395
+								},
+								{
+									"eventType": "block",
+									"conditions": [
+										{
+											"id": "compare-two-values",
+											"objectClass": "System",
+											"sid": 787036434311135,
+											"parameters": {
+												"first-value": "find(Password_Register.Text,\" \")",
+												"comparison": 1,
+												"second-value": "-1"
+											}
+										}
+									],
+									"actions": [
+										{
+											"id": "set-layer-visible",
+											"objectClass": "System",
+											"sid": 224668292913530,
+											"parameters": {
+												"layer": "\"8. Bao loi\"",
+												"visibility": "visible"
+											}
+										},
+										{
+											"id": "set-eventvar-value",
+											"objectClass": "System",
+											"sid": 160903646456352,
+											"parameters": {
+												"variable": "BAOLOIDANGKI",
+												"value": "1"
+											}
+										}
+									],
+									"sid": 143698062279177
+								},
+								{
+									"eventType": "block",
+									"conditions": [
+										{
+											"id": "compare-two-values",
+											"objectClass": "System",
+											"sid": 605521334727627,
+											"parameters": {
+												"first-value": "len(Password_Register.Text)",
+												"comparison": 2,
+												"second-value": "6"
+											}
+										}
+									],
+									"actions": [
+										{
+											"id": "set-layer-visible",
+											"objectClass": "System",
+											"sid": 711415733387346,
+											"parameters": {
+												"layer": "\"8. Bao loi\"",
+												"visibility": "visible"
+											}
+										},
+										{
+											"id": "set-eventvar-value",
+											"objectClass": "System",
+											"sid": 963877448142822,
+											"parameters": {
+												"variable": "BAOLOIDANGKI",
+												"value": "1"
+											}
+										}
+									],
+									"sid": 220511155600609
+								},
+								{
+									"eventType": "block",
+									"conditions": [
+										{
+											"id": "compare-two-values",
+											"objectClass": "System",
+											"sid": 508862565839014,
+											"parameters": {
+												"first-value": "len(Password_Register.Text)",
+												"comparison": 4,
+												"second-value": "12"
+											}
+										}
+									],
+									"actions": [
+										{
+											"id": "set-layer-visible",
+											"objectClass": "System",
+											"sid": 227009259010935,
+											"parameters": {
+												"layer": "\"8. Bao loi\"",
+												"visibility": "visible"
+											}
+										},
+										{
+											"id": "set-eventvar-value",
+											"objectClass": "System",
+											"sid": 385867465721202,
+											"parameters": {
+												"variable": "BAOLOIDANGKI",
+												"value": "1"
+											}
+										}
+									],
+									"sid": 749768625974089
+								},
+								{
+									"eventType": "block",
+									"conditions": [
+										{
+											"id": "compare-two-values",
+											"objectClass": "System",
+											"sid": 419583432636528,
+											"parameters": {
+												"first-value": "BAOLOIDANGKI",
+												"comparison": 0,
+												"second-value": "1"
+											}
+										}
+									],
+									"actions": [
+										{
+											"id": "wait",
+											"objectClass": "System",
+											"sid": 335890289316501,
+											"parameters": {
+												"seconds": "2",
+												"use-timescale": true
+											}
+										},
+										{
+											"id": "set-layer-visible",
+											"objectClass": "System",
+											"sid": 765784643242497,
+											"parameters": {
+												"layer": "\"8. Bao loi\"",
+												"visibility": "invisible"
+											}
+										}
+									],
+									"sid": 991863727781530
+								},
+								{
+									"eventType": "block",
+									"conditions": [
+										{
+											"id": "compare-two-values",
+											"objectClass": "System",
+											"sid": 476427366620004,
+											"parameters": {
+												"first-value": "BAOLOIDANGKI",
+												"comparison": 0,
+												"second-value": "0"
+											}
+										}
+									],
+									"actions": [
+										{
+											"id": "companyregister6",
+											"objectClass": "Authentication",
+											"sid": 367987252350290,
+											"parameters": {
+												"email_:0": "Email_Register.Text",
+												"username_:1": "Username_Register.Text",
+												"password_:2": "Password_Register.Text",
+												"displayname_:3": "DisplayName_Register.Text"
+											}
+										}
+									],
+									"sid": 740110973505538
+								}
+							]
+						}
+					],
+					"sid": 575258516869811
+				}
+			],
+			"sid": 572226504606508
+		}
+	],
+	"sid": 992125846293273
+}

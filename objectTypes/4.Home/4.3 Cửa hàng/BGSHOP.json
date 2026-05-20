@@ -1,0 +1,64 @@
+{
+	"name": "BGSHOP",
+	"plugin-id": "Sprite",
+	"sid": 766831685386208,
+	"isGlobal": false,
+	"editorNewInstanceIsReplica": true,
+	"instanceVariables": [],
+	"behaviorTypes": [],
+	"effectTypes": [],
+	"animations": {
+		"items": [
+			{
+				"frames": [
+					{
+						"width": 1013,
+						"height": 480,
+						"originX": 0.5,
+						"originY": 0.5,
+						"originalSource": "",
+						"exportFormat": "lossless",
+						"exportQuality": 0.8,
+						"fileType": "image/png",
+						"imageSpriteId": 8922698,
+						"collisionPoly": {
+							"points": [
+								0.17077986179664364,
+								0,
+								0.9378084896347483,
+								0,
+								0.9674234945705824,
+								0.058333333333333334,
+								0.9792694965449161,
+								0.9104166666666667,
+								0.9506416584402764,
+								0.9395833333333333,
+								0.8726554787759131,
+								0.9708333333333333,
+								0.7670286278381047,
+								0.9854166666666667,
+								0.06910167818361303,
+								0.9666666666666667,
+								0.03751233958538993,
+								0.8666666666666667,
+								0.05725567620927937,
+								0.11458333333333333
+							]
+						},
+						"useCollisionPoly": true,
+						"duration": 1,
+						"tag": ""
+					}
+				],
+				"sid": 601336444628249,
+				"name": "Animation 1",
+				"isLooping": false,
+				"isPingPong": false,
+				"repeatCount": 1,
+				"repeatTo": 0,
+				"speed": 5
+			}
+		],
+		"subfolders": []
+	}
+}
